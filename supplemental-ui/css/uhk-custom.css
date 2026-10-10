@@ -1,210 +1,218 @@
 /* ==========================================================================
-   UHK (Univerzita Hradec Králové) Custom Theme for Antora
+   Pedagogická fakulta UHK (PdF UHK) - Webový vizuální styl pro Antoru
+   Vzor: https://www.uhk.cz/cs/pedagogicka-fakulta/pdf
    ========================================================================== */
 
 :root {
-  /* UHK Identity Palette */
+  /* PdF UHK Barevná paleta */
+  --pdf-magenta: #ce0058;
+  --pdf-magenta-hover: #a10044;
+  --pdf-magenta-light: rgba(206, 0, 88, 0.08);
   --uhk-black: #1f242e;
-  --uhk-charcoal: #2d3340;
-  --uhk-red: #c8102e;
-  --uhk-red-hover: #a00c24;
-  --uhk-red-light: rgba(200, 16, 46, 0.08);
-  --uhk-prf-green: #688e26;
+  --uhk-dark: #111827;
   
-  /* Layout & Surface */
-  --uhk-bg-body: #ffffff;
-  --uhk-bg-sidebar: #f8fafc;
-  --uhk-bg-muted: #f1f5f9;
+  /* Pozadí a povrchy - SVĚTLÝ VZHLED */
+  --uhk-bg-white: #ffffff;
+  --uhk-bg-light: #f8fafc;
+  --uhk-bg-footer: #f1f5f9;
   --uhk-border: #e2e8f0;
-  --uhk-border-subtle: #edf2f7;
+  --uhk-border-subtle: #f1f5f9;
   
-  /* Typography */
+  /* Typografie */
   --uhk-font-heading: 'Outfit', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --uhk-font-body: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  --uhk-text-main: #1e293b;
-  --uhk-text-muted: #64748b;
-  --uhk-text-light: #94a3b8;
+  --uhk-text-main: #1f242e;
+  --uhk-text-muted: #475569;
+  --uhk-text-light: #64748b;
   
-  /* Antora Theme Overrides */
+  /* Přepsání Antora proměnných */
   --navbar-background: #ffffff;
-  --navbar-font-color: var(--uhk-black);
-  --navbar-border-color: var(--uhk-border);
-  --nav-background: var(--uhk-bg-sidebar);
-  --body-font-family: var(--uhk-font-body);
-  --body-font-color: var(--uhk-text-main);
-  --body-background: var(--uhk-bg-body);
-  --link-font-color: var(--uhk-red);
-  --link_hover-font-color: var(--uhk-red-hover);
+  --navbar-font-color: #1f242e;
+  --navbar_menu-background: #ffffff;
+  --nav-background: #f8fafc;
+  --footer-background: #f1f5f9;
+  --footer-font-color: #334155;
+  --link-font-color: var(--pdf-magenta);
+  --link_hover-font-color: var(--pdf-magenta-hover);
 }
 
 body {
   font-family: var(--uhk-font-body);
   color: var(--uhk-text-main);
-  background-color: var(--uhk-bg-body);
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* ==========================================================================
-   HEADER / NAVBAR
+   ZÁHLAVÍ (HEADER / NAVBAR) - ČISTĚ BÍLÉ JAKO NA UHK.CZ
    ========================================================================== */
-.uhk-header {
+header.header,
+header.header .navbar,
+header.header .navbar-brand,
+header.header .navbar-menu,
+header.header .navbar-start,
+header.header .navbar-end,
+.navbar,
+.navbar-brand,
+.navbar-menu {
+  background: #ffffff !important;
   background-color: #ffffff !important;
-  border-bottom: 1px solid var(--uhk-border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  color: var(--uhk-text-main) !important;
+}
+
+header.header {
+  border-bottom: 1px solid var(--uhk-border) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.uhk-header .navbar {
+header.header .navbar {
   max-width: 1440px;
   margin: 0 auto;
-  height: 64px;
+  height: 68px;
   display: flex;
   align-items: center;
   padding: 0 1.5rem;
 }
 
+/* Logo a název */
 .uhk-brand {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  padding: 0.5rem 0;
+  gap: 1.25rem;
+  text-decoration: none !important;
+  padding: 0.5rem 0 !important;
+  color: var(--uhk-text-main) !important;
 }
 
 .uhk-brand-logo {
-  height: 34px;
+  height: 38px;
   width: auto;
   display: block;
 }
 
-.uhk-brand-titles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-left: 2px solid var(--uhk-border);
-  padding-left: 0.85rem;
-}
-
-.uhk-brand-faculty {
-  font-family: var(--uhk-font-heading);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--uhk-text-muted);
-  line-height: 1.2;
+.uhk-brand-divider {
+  display: inline-block;
+  height: 28px;
+  width: 1px;
+  background-color: #cbd5e1;
 }
 
 .uhk-brand-thesis {
   font-family: var(--uhk-font-heading);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: var(--uhk-black);
-  line-height: 1.2;
+  color: var(--uhk-dark) !important;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
-.uhk-nav-link {
-  font-family: var(--uhk-font-heading);
-  font-size: 0.9rem;
-  font-weight: 600;
+/* Odkazy v hlavičce */
+.uhk-nav-link,
+.navbar-end .navbar-item.uhk-nav-link {
+  font-family: var(--uhk-font-heading) !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
   color: var(--uhk-text-main) !important;
-  padding: 0.5rem 0.9rem;
+  padding: 0.5rem 0.9rem !important;
   border-radius: 6px;
   transition: all 0.15s ease-in-out;
+  text-decoration: none !important;
 }
 
-.uhk-nav-link:hover {
-  color: var(--uhk-red) !important;
-  background-color: var(--uhk-bg-muted);
+.uhk-nav-link:hover,
+.navbar-end .navbar-item.uhk-nav-link:hover {
+  color: var(--pdf-magenta) !important;
+  background-color: var(--uhk-bg-light) !important;
 }
 
-.uhk-btn-primary {
-  background-color: var(--uhk-black) !important;
-  color: #ffffff !important;
-  font-family: var(--uhk-font-heading);
-  font-size: 0.85rem !important;
+/* Tlačítko na GitHub */
+.uhk-btn-repo {
+  background-color: #ffffff !important;
+  color: var(--uhk-dark) !important;
+  font-family: var(--uhk-font-heading) !important;
+  font-size: 0.88rem !important;
   font-weight: 600 !important;
-  padding: 0.45rem 1rem !important;
+  padding: 0.45rem 0.95rem !important;
   border-radius: 6px !important;
+  border: 1px solid var(--uhk-border) !important;
   transition: all 0.2s ease !important;
-  border: 1px solid var(--uhk-black) !important;
   display: inline-flex;
   align-items: center;
+  text-decoration: none !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-.uhk-btn-primary:hover {
-  background-color: var(--uhk-red) !important;
-  border-color: var(--uhk-red) !important;
-  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.25);
+.uhk-btn-repo:hover {
+  background-color: var(--pdf-magenta) !important;
+  border-color: var(--pdf-magenta) !important;
+  color: #ffffff !important;
+}
+
+/* Mobilní burger tlačítko */
+.navbar-burger span {
+  background-color: var(--uhk-text-main) !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    border-top: 1px solid var(--uhk-border);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08) !important;
+    padding: 0.5rem 1rem !important;
+  }
 }
 
 /* ==========================================================================
-   NAVIGATION SIDEBAR (Levé menu kapitol)
+   LEVA NAVIGACE (SIDEBAR - MENU KAPITOL)
    ========================================================================== */
 .nav-container {
-  background-color: var(--uhk-bg-sidebar) !important;
-  border-right: 1px solid var(--uhk-border);
-}
-
-.nav {
-  font-family: var(--uhk-font-body);
+  background-color: var(--uhk-bg-light) !important;
+  border-right: 1px solid var(--uhk-border) !important;
 }
 
 .nav-panel-menu {
-  padding: 1rem 0.5rem;
-}
-
-.nav-menu .nav-list {
-  padding-left: 0.75rem;
-}
-
-.nav-menu > .nav-list {
-  padding-left: 0;
-}
-
-.nav-item {
-  margin-bottom: 2px;
+  padding: 1.25rem 0.75rem;
 }
 
 .nav-link {
   color: var(--uhk-text-main) !important;
   font-size: 0.92rem;
-  padding: 0.45rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 6px;
   display: block;
   transition: all 0.15s ease;
   line-height: 1.4;
+  text-decoration: none !important;
 }
 
 .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-  color: var(--uhk-red) !important;
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  color: var(--pdf-magenta) !important;
 }
 
-/* Aktivní položka v navigaci */
+/* Aktivní položka (čtená kapitola) */
 .nav-item.is-current-page > .nav-link,
 .nav-item.is-active > .nav-link {
-  background-color: var(--uhk-red-light) !important;
-  color: var(--uhk-red) !important;
-  font-weight: 600;
-  border-left: 3px solid var(--uhk-red);
+  background-color: var(--pdf-magenta-light) !important;
+  color: var(--pdf-magenta) !important;
+  font-weight: 700 !important;
+  border-left: 3px solid var(--pdf-magenta);
   padding-left: calc(0.75rem - 3px);
 }
 
-/* Skrýt přepínač verzí pokud je jen jedna */
 .nav-panel-explore {
-  border-top: 1px solid var(--uhk-border);
-  background-color: var(--uhk-bg-sidebar) !important;
+  border-top: 1px solid var(--uhk-border) !important;
+  background-color: var(--uhk-bg-light) !important;
 }
 
 /* ==========================================================================
    HLAVNÍ TEXT DIPLOMOVÉ PRÁCE (.doc)
    ========================================================================== */
 .main {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .doc {
@@ -221,7 +229,7 @@ body {
   font-family: var(--uhk-font-heading);
   font-size: 2.3rem;
   font-weight: 700;
-  color: var(--uhk-black);
+  color: var(--uhk-dark);
   letter-spacing: -0.02em;
   line-height: 1.25;
   margin-top: 0;
@@ -238,14 +246,14 @@ body {
   bottom: -2px;
   width: 60px;
   height: 2px;
-  background-color: var(--uhk-red);
+  background-color: var(--pdf-magenta);
 }
 
 .doc h2 {
   font-family: var(--uhk-font-heading);
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--uhk-black);
+  color: var(--uhk-dark);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   line-height: 1.3;
@@ -255,15 +263,9 @@ body {
   font-family: var(--uhk-font-heading);
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--uhk-charcoal);
+  color: var(--uhk-black);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-}
-
-.doc h4, .doc h5, .doc h6 {
-  font-family: var(--uhk-font-heading);
-  font-weight: 600;
-  color: var(--uhk-text-main);
 }
 
 .doc p {
@@ -271,27 +273,17 @@ body {
   margin-bottom: 1.25rem;
 }
 
-/* Odkazy */
+/* Odkazy v textu */
 .doc a {
-  color: var(--uhk-red);
+  color: var(--pdf-magenta);
   text-decoration: none;
-  border-bottom: 1px solid rgba(200, 16, 46, 0.25);
+  border-bottom: 1px solid rgba(206, 0, 88, 0.25);
   transition: all 0.15s ease;
 }
 
 .doc a:hover {
-  color: var(--uhk-red-hover);
-  border-bottom-color: var(--uhk-red-hover);
-}
-
-/* Seznamy */
-.doc ul, .doc ol {
-  margin-bottom: 1.25rem;
-  padding-left: 1.75rem;
-}
-
-.doc li {
-  margin-bottom: 0.35rem;
+  color: var(--pdf-magenta-hover);
+  border-bottom-color: var(--pdf-magenta-hover);
 }
 
 /* Blokové citace (Admonitions - NOTE, TIP, IMPORTANT) */
@@ -305,26 +297,15 @@ body {
 .doc .admonitionblock > table {
   width: 100%;
   border-collapse: collapse;
-  background-color: var(--uhk-bg-sidebar);
+  background-color: var(--uhk-bg-light);
   border: 1px solid var(--uhk-border);
   border-left-width: 5px;
 }
 
-.doc .admonitionblock.note > table {
-  border-left-color: #0284c7;
-}
-
-.doc .admonitionblock.tip > table {
-  border-left-color: var(--uhk-prf-green);
-}
-
-.doc .admonitionblock.important > table {
-  border-left-color: var(--uhk-red);
-}
-
-.doc .admonitionblock.warning > table {
-  border-left-color: #ea580c;
-}
+.doc .admonitionblock.note > table { border-left-color: #0284c7; }
+.doc .admonitionblock.tip > table { border-left-color: #16a34a; }
+.doc .admonitionblock.important > table { border-left-color: var(--pdf-magenta); }
+.doc .admonitionblock.warning > table { border-left-color: #ea580c; }
 
 .doc .admonitionblock td.icon {
   width: 80px;
@@ -337,8 +318,8 @@ body {
 }
 
 .doc .admonitionblock.note td.icon { color: #0284c7; }
-.doc .admonitionblock.tip td.icon { color: var(--uhk-prf-green); }
-.doc .admonitionblock.important td.icon { color: var(--uhk-red); }
+.doc .admonitionblock.tip td.icon { color: #16a34a; }
+.doc .admonitionblock.important td.icon { color: var(--pdf-magenta); }
 .doc .admonitionblock.warning td.icon { color: #ea580c; }
 
 .doc .admonitionblock td.content {
@@ -358,8 +339,8 @@ body {
 }
 
 .doc table.tableblock th.tableblock {
-  background-color: var(--uhk-bg-muted);
-  color: var(--uhk-black);
+  background-color: var(--uhk-bg-footer);
+  color: var(--uhk-dark);
   font-family: var(--uhk-font-heading);
   font-weight: 600;
   padding: 0.75rem 1rem;
@@ -373,26 +354,15 @@ body {
 }
 
 .doc table.tableblock tr:nth-child(even) td.tableblock {
-  background-color: rgba(248, 250, 252, 0.6);
-}
-
-/* Popisky obrázků a tabulek */
-.doc .title,
-.doc .caption {
-  font-family: var(--uhk-font-heading);
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--uhk-text-muted);
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  background-color: rgba(248, 250, 252, 0.7);
 }
 
 /* ==========================================================================
    PRAVÝ PANEL S OBSAHEM STRÁNKY (TOC)
-   ========================================================================== */
+   ========================================================================= */
 .toc-sidebar {
   border-left: 1px solid var(--uhk-border);
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .toc .toc-menu {
@@ -417,21 +387,24 @@ body {
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
   transition: all 0.15s ease;
+  text-decoration: none !important;
 }
 
 .toc .toc-menu a:hover {
-  color: var(--uhk-red) !important;
-  background-color: var(--uhk-bg-muted);
+  color: var(--pdf-magenta) !important;
+  background-color: var(--uhk-bg-light);
 }
 
 /* ==========================================================================
-   PATIČKA (FOOTER)
+   ZÁPATÍ (FOOTER) - SVĚTLÉ PODLE STRÁNKY UHK / PdF
    ========================================================================== */
+footer.footer,
 .uhk-footer {
-  background-color: var(--uhk-black) !important;
-  color: #f1f5f9 !important;
-  border-top: 4px solid var(--uhk-red);
-  padding: 3rem 1.5rem 2rem 1.5rem !important;
+  background-color: var(--uhk-bg-footer) !important;
+  background: var(--uhk-bg-footer) !important;
+  color: var(--uhk-text-main) !important;
+  border-top: 3px solid var(--pdf-magenta) !important;
+  padding: 2.5rem 1.5rem 2rem 1.5rem !important;
   font-family: var(--uhk-font-body);
 }
 
@@ -446,8 +419,8 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--uhk-border);
 }
 
 .uhk-footer-brand {
@@ -459,13 +432,13 @@ body {
   font-family: var(--uhk-font-heading);
   font-size: 1.15rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--uhk-dark) !important;
   letter-spacing: -0.01em;
 }
 
 .uhk-footer-sub {
-  font-size: 0.85rem;
-  color: #94a3b8;
+  font-size: 0.88rem;
+  color: var(--uhk-text-muted) !important;
   margin-top: 0.25rem;
 }
 
@@ -478,14 +451,15 @@ body {
 .uhk-footer-links a {
   font-family: var(--uhk-font-heading);
   font-size: 0.9rem;
-  color: #cbd5e1 !important;
-  text-decoration: none;
+  color: var(--uhk-text-main) !important;
+  text-decoration: none !important;
   transition: color 0.15s ease;
+  font-weight: 500;
 }
 
 .uhk-footer-links a:hover {
-  color: #ffffff !important;
-  text-decoration: underline;
+  color: var(--pdf-magenta) !important;
+  text-decoration: underline !important;
 }
 
 .uhk-footer-bottom {
@@ -495,16 +469,18 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   padding-top: 1.5rem;
-  font-size: 0.8rem;
-  color: #64748b;
+  font-size: 0.85rem;
+  color: var(--uhk-text-light);
 }
 
 .uhk-footer-copy {
   margin: 0;
+  color: var(--uhk-text-muted);
 }
 
 .uhk-footer-note {
   margin: 0;
+  color: var(--uhk-text-light);
 }
 
 @media (max-width: 768px) {
