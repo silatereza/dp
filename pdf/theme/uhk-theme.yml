@@ -1,0 +1,107 @@
+# Téma asciidoctor-pdf podle šablony BP_DP_sablona_PrF25_ET.docx (UHK, PřF):
+# A4, okraje 2,5 cm (vlevo 3,5 cm), Cambria 12 pt, řádkování 1,5, zarovnání do bloku,
+# mezera za odstavcem 12 pt, nadpisy 18/14/12 pt tučně s číslováním, číslo strany
+# uprostřed dole (od úvodu; úvodní strany a přílohy bez čísla).
+# Písmo Cambria se registruje v pdf/extensions/uhk-converter.rb (je v kolekci cambria.ttc).
+extends: default
+page:
+  size: A4
+  # nahoře, vpravo, dole, vlevo (1418 / 1985 twipů)
+  margin: [70.9, 70.9, 70.9, 99.2]
+  layout: portrait
+base:
+  font_family: Cambria
+  font_size: 12
+  font_color: 000000
+  text_align: justify
+  # Word "1,5 řádku" u Cambrie 12 pt = cca 21 pt; Prawn přičítá leading k výšce řádku písma (cca 14 pt).
+  line_height: 1.59
+  line_height_length: 12
+  font_style: normal
+prose:
+  margin_top: 0
+  margin_bottom: 12
+heading:
+  font_family: Cambria
+  font_color: 000000
+  font_style: bold
+  font_size: 12
+  line_height: 1.2
+  text_align: left
+  margin_top: 2
+  margin_bottom: 0
+  h1:
+    font_size: 18
+    margin_top: 18
+    margin_bottom: 18
+  h2:
+    font_size: 14
+  h3:
+    font_size: 12
+  h4:
+    font_size: 12
+  h5:
+    font_size: 12
+  h6:
+    font_size: 12
+  chapter:
+    break_before: always
+role:
+  text-right:
+    text_align: right
+  zadani:
+    font_color: 7F7F7F
+    text_align: left
+link:
+  font_color: 000000
+list:
+  indent: 18
+  item:
+    spacing: 4
+caption:
+  font_style: italic
+  font_size: 10
+  font_color: 000000
+  text_align: left
+  margin_inside: 4
+  margin_outside: 10
+image:
+  align: center
+  caption:
+    text_align: center
+table:
+  head:
+    font_style: bold
+    background_color: ffffff
+  border_color: 000000
+  border_width: 0.5
+  cell:
+    padding: [3, 4, 3, 4]
+toc:
+  font_size: 12
+  indent: 12
+  line_height: 1.3
+  dot_leader:
+    font_color: 000000
+  title:
+    text_align: left
+    font_size: 18
+header:
+  height: 0
+footer:
+  height: 60
+  padding: [0, 0, 0, 0]
+  vertical_align: middle
+  font_size: 12
+  recto: &footer_side
+    left:
+      content: ''
+    center:
+      content: '{page-number}'
+    right:
+      content: ''
+  verso: *footer_side
+running_content:
+  start_at: after-toc
+page_numbering:
+  start_at: title

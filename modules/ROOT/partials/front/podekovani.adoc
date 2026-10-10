@@ -1,0 +1,7 @@
+[discrete]
+= Poděkování
+
+// Nepovinné. Krátké poděkování vedoucímu práce, konzultantům, respondentům apod.
+// Pokud poděkování nechcete, odstraňte jeho vložení z pdf/dp.adoc.
+
+Poděkování.

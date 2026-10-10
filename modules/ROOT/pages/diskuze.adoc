@@ -1,0 +1,6 @@
+= Diskuze
+
+// Interpretace hlavních výsledků a jejich zasazení do kontextu literatury,
+// limity práce a doporučení pro praxi.
+
+Text diskuze.

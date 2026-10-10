@@ -1,0 +1,5 @@
+= Diplomová práce
+
+Tato stránka slouží jen jako úvodní strana HTML náhledu (Antora).
+Tištěná podoba práce (PDF, DOCX) se sestavuje ze souboru `pdf/dp.adoc`,
+který do sebe vkládá stránky z tohoto modulu, viz `pdf/build.ps1`.

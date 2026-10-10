@@ -1,0 +1,23 @@
+[discrete]
+= Anotace
+
+{author-iso}. _{doctitle}_. {city}: {faculty} Univerzity Hradec Králové, {thesis-year}. {pages-count} s. {thesis-type-cap} závěrečná práce.
+
+// Základní údaje charakterizující v českém jazyce obsah a výsledky práce.
+
+Text anotace.
+
+*Klíčová slova:* {keywords-cs}
+
+<<<
+
+[discrete]
+= Annotation
+
+{author-iso}. _{thesis-title-en}_. {city}: {faculty-en}, University of Hradec Králové, {thesis-year}. {pages-count} pp. {thesis-type-en}.
+
+// Základní údaje charakterizující obsah a výsledky práce ve zvoleném cizím jazyce.
+
+Text of the annotation.
+
+*Keywords:* {keywords-en}

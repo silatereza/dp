@@ -1,0 +1,70 @@
+= Název práce
+:doctype: book
+:lang: cs
+:encoding: utf-8
+:imagesdir: ../modules/ROOT/images
+:toc: macro
+:toc-title: Obsah
+:toclevels: 3
+:sectnumlevels: 4
+:xrefstyle: short
+:table-caption: Tabulka
+:figure-caption: Obrázek
+:listing-caption: Výpis
+:appendix-caption: Příloha
+:chapter-signifier:
+:pdf-theme: uhk
+:pdf-themesdir: {docdir}/theme
+:media: print
+:bibliography-database: ../modules/ROOT/attachments/literatura.bib
+:bibliography-style: ../modules/ROOT/attachments/iso690-author-date-cs.csl
+:bibliography-hacks: none
+include::../modules/ROOT/partials/metadata.adoc[]
+
+// ---- Úvodní strany (obálku vykreslí převodník z metadat) ----
+:sectnums!:
+
+include::../modules/ROOT/partials/front/zadani.adoc[]
+
+<<<
+
+include::../modules/ROOT/partials/front/prohlaseni.adoc[]
+
+<<<
+
+include::../modules/ROOT/partials/front/podekovani.adoc[]
+
+<<<
+
+include::../modules/ROOT/partials/front/anotace.adoc[]
+
+<<<
+
+ifndef::docx[]
+toc::[]
+endif::[]
+
+// ---- Vlastní text práce ----
+include::../modules/ROOT/pages/uvod.adoc[leveloffset=+1]
+
+:sectnums:
+
+include::../modules/ROOT/pages/teoreticka-vychodiska.adoc[leveloffset=+1]
+
+include::../modules/ROOT/pages/cil-prace.adoc[leveloffset=+1]
+
+include::../modules/ROOT/pages/metodika.adoc[leveloffset=+1]
+
+include::../modules/ROOT/pages/vysledky.adoc[leveloffset=+1]
+
+include::../modules/ROOT/pages/diskuze.adoc[leveloffset=+1]
+
+:sectnums!:
+
+include::../modules/ROOT/pages/zaver.adoc[leveloffset=+1]
+
+include::../modules/ROOT/partials/back/reference.adoc[]
+
+include::../modules/ROOT/partials/back/seznam-priloh.adoc[]
+
+include::../modules/ROOT/partials/back/prilohy.adoc[]

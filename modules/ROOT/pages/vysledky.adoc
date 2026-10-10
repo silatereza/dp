@@ -1,0 +1,18 @@
+= Výsledky
+
+// Věcná prezentace zjištěných dat bez interpretace (ta patří do Diskuze).
+// Tabulky, obrázky a grafy se číslují samostatně; legenda s popisem, který
+// umožní pochopit obsah bez čtení textu.
+
+.Ukázková tabulka
+[cols="2,1,1",options="header"]
+|===
+| Skupina | Průměr | SD
+
+| Chlapci | 0,0 | 0,0
+| Dívky | 0,0 | 0,0
+|===
+
+// Obrázky (ukládejte do modules/ROOT/images/):
+// .Popis obrázku
+// image::nazev-obrazku.png[Alternativní text,width=80%,align=center]

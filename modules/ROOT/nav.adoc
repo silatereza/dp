@@ -1,0 +1,8 @@
+* xref:index.adoc[Diplomová práce]
+* xref:uvod.adoc[Úvod]
+* xref:teoreticka-vychodiska.adoc[Teoretická východiska]
+* xref:cil-prace.adoc[Cíl práce, úkoly práce, výzkumné otázky a hypotézy]
+* xref:metodika.adoc[Metodika]
+* xref:vysledky.adoc[Výsledky]
+* xref:diskuze.adoc[Diskuze]
+* xref:zaver.adoc[Závěr]

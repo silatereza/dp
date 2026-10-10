@@ -1,0 +1,6 @@
+== Seznam příloh
+
+// Přílohy se označují písmeny (Příloha A, Příloha B ...). Strany příloh se nečíslují.
+// Na přílohy se odkazujte v textu, např. "viz Příloha A".
+
+* Příloha A: Název přílohy

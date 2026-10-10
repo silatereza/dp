@@ -1,0 +1,22 @@
+= Teoretická východiska
+
+// Systematické shrnutí poznatků na základě rešerše odborné literatury (primární
+// zdroje, přehledové články, meta-analýzy). Logicky členěno do podkapitol.
+
+Úvodní text kapitoly.
+
+== Nadpis úroveň 2
+
+Text.
+
+=== Nadpis úrovně 3
+
+Text.
+
+==== Nadpis úrovně 4
+
+Text navazující na nadpis čtvrté úrovně.
+
+===== Nadpis úrovně 5
+
+Text navazující na nadpis páté úrovně.

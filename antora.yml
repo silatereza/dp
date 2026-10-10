@@ -1,0 +1,10 @@
+name: diplomova-prace
+title: Diplomová práce
+version: ~
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    lang: cs
+    sectnums: ''
+    xrefstyle: short

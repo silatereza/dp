@@ -1,0 +1,3 @@
+[.zadani]
+Sem vložte zadání práce (celá strana, získá se při odevzdávání práce). Tuto stránku po vygenerování PDF nahraďte zadáním;
+v DOCX vložte zadání přímo do Wordu.

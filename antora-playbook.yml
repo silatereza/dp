@@ -1,0 +1,16 @@
+# Volitelné: HTML náhled práce přes Antora (npx antora antora-playbook.yml).
+# PDF/DOCX se generují z pdf/dp.adoc, viz pdf/build.ps1.
+site:
+  title: Diplomová práce
+  start_page: diplomova-prace::index.adoc
+content:
+  sources:
+    - url: .
+      start_path: .
+      branches: HEAD
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+output:
+  dir: build/site

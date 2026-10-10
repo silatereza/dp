@@ -1,0 +1,24 @@
+= Cíl práce, úkoly práce, výzkumné otázky a hypotézy
+
+== Cíl
+
+// Jednoznačné vymezení hlavního cíle; shodný se zadáním ve STAGu.
+
+== Úkoly práce
+
+// Konkrétní kroky, které je třeba splnit; uvádějí se v přehledných bodech.
+
+. První úkol.
+. Druhý úkol.
+
+== Výzkumné otázky
+
+// Konkrétní, jednoznačné a zodpověditelné; vycházejí z cíle práce.
+
+== Hypotézy
+
+// Pouze u kvantitativního výzkumu, obvykle 1 až 3 hlavní hypotézy.
+
+H~1~: Text hypotézy.
+
+H~0~: Text nulové hypotézy.

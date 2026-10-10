@@ -1,0 +1,8 @@
+= Export do Wordu
+
+`reference.docx` je šablona `rules/BP_DP_sablona_PrF25_ET.docx` bez obsahu (zachované styly Nadpis 1-3,
+Titulek, okraje a patička s číslem strany). Pandoc z ní přebírá styly pro `build.ps1 -Docx`.
+
+Omezení exportu DOCX: obálka, zadání a prohlášení se do Wordu přenášejí jen jako text (obálku a zadání
+vložte ručně z originální šablony), Úvod a Závěr nesou číslování stylu Nadpis 1 (v šabloně je číslování
+u nich vypnuté přímo v odstavci).

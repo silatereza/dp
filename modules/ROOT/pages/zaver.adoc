@@ -1,0 +1,5 @@
+= Závěr
+
+// Stručné shrnutí práce navazující na cíle a otázky z úvodu; bez nových informací.
+
+Text závěru.

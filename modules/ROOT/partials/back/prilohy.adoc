@@ -1,0 +1,4 @@
+[appendix.priloha]
+== Název přílohy
+
+// Obrázky v přílohách musí mít titulek.

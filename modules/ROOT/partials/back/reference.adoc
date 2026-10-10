@@ -1,0 +1,7 @@
+== Seznam použité literatury
+
+// Citace: Harvard (autor, rok) podle ČSN ISO 690. V textu: cite:[novak2021] -> (Novák, 2021).
+// Seznam se generuje z modules/ROOT/attachments/literatura.bib (export ze Zotera).
+// Zdroje obrázků a tabulek uvádějte pod titulkem: "Zdroj: vlastní zpracování".
+
+bibliography::[]

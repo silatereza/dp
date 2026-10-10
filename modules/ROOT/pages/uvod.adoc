@@ -1,0 +1,6 @@
+= Úvod
+
+// Stručné představení tématu, jeho aktuálnosti a problému, který práce řeší.
+// Rozsah přibližně 1 až 2 strany; věcně, přehledně a motivačně.
+
+Text úvodu s ukázkovou citací cite:[novak2021].

@@ -1,0 +1,9 @@
+[discrete]
+= Prohlášení
+
+Prohlašuji, že jsem tuto {thesis-type-acc} práci vypracoval{author-a} pod vedením {supervisor-gen} {thesis-type-gen} práce samostatně a uvedl{author-a} jsem všechny použité prameny a literaturu. V případě využití nástrojů umělé inteligence jsem plně deklaroval{author-a} způsob jejich využití při vypracování této práce.
+
+V {city-loc} dne {declaration-date}
+
+[.text-right]
+{author}

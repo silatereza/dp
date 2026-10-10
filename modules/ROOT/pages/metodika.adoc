@@ -1,0 +1,11 @@
+= Metodika
+
+// Výzkumný design, výzkumný soubor, metody sběru dat, zpracování a vyhodnocení dat.
+
+== Výzkumný design
+
+== Výzkumný soubor
+
+== Metody sběru dat
+
+== Zpracování dat

@@ -1,0 +1,28 @@
+// Metadata práce - upravte pro svou práci. Používá se na obálce, v prohlášení a anotacích.
+:university: Univerzita Hradec Králové
+// Studenti Pedagogické fakulty: Pedagogická fakulta / Katedra matematiky Přírodovědecké fakulty
+:faculty: Přírodovědecká fakulta
+:faculty-en: Faculty of Science
+:department: Katedra matematiky
+:city: Hradec Králové
+:city-loc: Hradci Králové
+:thesis-year: 2026
+:declaration-date: DD.MM.RRRR
+// Druh práce - diplomová (u bakalářské změňte všechny řádky níže)
+:thesis-type-lower: diplomová práce
+:thesis-type-acc: diplomovou
+:thesis-type-gen: diplomové
+:thesis-type-cap: Diplomová
+:thesis-type-en: Diploma Dissertation
+// Autor(ka): koncovka "(a)" ponechte nebo nahraďte "a" / prázdným řetězcem
+:author: (titul) Jméno Příjmení
+:author-iso: PŘÍJMENÍ, Jméno
+:author-a: (a)
+:study-program: podle STAGu
+:study-field: podle STAGu
+:supervisor: titul Jméno Příjmení
+:supervisor-gen: vedoucího
+:pages-count: 00
+:thesis-title-en: The Title of the Thesis
+:keywords-cs: 5 až 7 výrazů oddělených čárkou
+:keywords-en: 5 to 7 terms separated by commas
