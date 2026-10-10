@@ -32,6 +32,8 @@ dp/
 │  ├─ word/reference.docx, README.adoc  styly pro export DOCX
 │  └─ build.ps1                   sestavení
 ├─ build/                         výstupy (dp.pdf, dp.docx) - necommitovat
+├─ podklady/                      pomocné soubory (zdroje, data žáků, poznámky) - v .gitignore, NIKDY necommitovat;
+│                                 do práce jen anonymizované výstupy z podklady/data/anonymizovano/
 └─ rules/                         zadávací dokumenty UHK (šablona, řád, pokyny k AI) - jen ke čtení
 ```
 

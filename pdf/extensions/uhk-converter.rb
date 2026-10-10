@@ -49,6 +49,7 @@ class UhkPDFConverter < (Asciidoctor::Converter.for 'pdf')
       ['Studijní obor:', doc.attr('study-field')],
       ['Vedoucí práce:', doc.attr('supervisor')],
     ].each do |label, value|
+      next if value.to_s.strip.empty?
       text_box label, at: [0, y], width: 130, size: 12
       text_box value.to_s, at: [130, y], width: bounds.width - 130, size: 12
       y -= 28

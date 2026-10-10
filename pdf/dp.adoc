@@ -1,4 +1,4 @@
-= Název práce
+= Působení na klima třídy prostřednictvím digitální hry
 :doctype: book
 :lang: cs
 :encoding: utf-8

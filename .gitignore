@@ -2,3 +2,5 @@ build/*
 !build/.gitkeep
 node_modules/
 .bundle/
+# Podklady (osobní údaje žáků, autorsky chráněné texty, pracovní data) - celý adresář NIKDY necommitovat
+podklady/

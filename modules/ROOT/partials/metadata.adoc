@@ -2,7 +2,7 @@
 :university: Univerzita Hradec Králové
 :faculty: Pedagogická fakulta
 :faculty-en: Faculty of Education
-:department: Katedra pedagogiky a psychologie
+:department: Ústav primární, preprimární a speciální pedagogiky
 :city: Hradec Králové
 :city-loc: Hradci Králové
 :thesis-year: 2026
@@ -14,14 +14,15 @@
 :thesis-type-cap: Diplomová
 :thesis-type-en: Diploma Dissertation
 // Autor(ka): koncovka "(a)" ponechte nebo nahraďte "a" / prázdným řetězcem
-:author: Bc. Tereza Šílová
+:author: Ing. Tereza Šílová
 :author-iso: ŠÍLOVÁ, Tereza
 :author-a: a
-:study-program: podle STAGu
-:study-field: podle STAGu
-:supervisor: titul Jméno Příjmení
+:study-program: Učitelství pro 1. stupeň základních škol
+// Obor zatím nevyplněn - prázdný řádek se na obálce vynechá
+:study-field:
+:supervisor: Mgr. Martin Kaliba, Ph.D.
 :supervisor-gen: vedoucího
 :pages-count: 00
-:thesis-title-en: The Title of the Thesis
-:keywords-cs: 5 až 7 výrazů oddělených čárkou
-:keywords-en: 5 to 7 terms separated by commas
+:thesis-title-en: Influencing Classroom Climate through Digital Games
+:keywords-cs: digitální hry, klima třídy, žáci, intervence, elementary school
+:keywords-en: digital games, classroom climate, students, intervention, elementary school
