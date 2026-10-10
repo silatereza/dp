@@ -1,9 +1,8 @@
 // Metadata práce - upravte pro svou práci. Používá se na obálce, v prohlášení a anotacích.
 :university: Univerzita Hradec Králové
-// Studenti Pedagogické fakulty: Pedagogická fakulta / Katedra matematiky Přírodovědecké fakulty
-:faculty: Přírodovědecká fakulta
-:faculty-en: Faculty of Science
-:department: Katedra matematiky
+:faculty: Pedagogická fakulta
+:faculty-en: Faculty of Education
+:department: Katedra pedagogiky a psychologie
 :city: Hradec Králové
 :city-loc: Hradci Králové
 :thesis-year: 2026
@@ -15,9 +14,9 @@
 :thesis-type-cap: Diplomová
 :thesis-type-en: Diploma Dissertation
 // Autor(ka): koncovka "(a)" ponechte nebo nahraďte "a" / prázdným řetězcem
-:author: (titul) Jméno Příjmení
-:author-iso: PŘÍJMENÍ, Jméno
-:author-a: (a)
+:author: Bc. Tereza Šílová
+:author-iso: ŠÍLOVÁ, Tereza
+:author-a: a
 :study-program: podle STAGu
 :study-field: podle STAGu
 :supervisor: titul Jméno Příjmení
