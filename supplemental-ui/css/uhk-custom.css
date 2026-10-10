@@ -1,0 +1,518 @@
+/* ==========================================================================
+   UHK (Univerzita Hradec Králové) Custom Theme for Antora
+   ========================================================================== */
+
+:root {
+  /* UHK Identity Palette */
+  --uhk-black: #1f242e;
+  --uhk-charcoal: #2d3340;
+  --uhk-red: #c8102e;
+  --uhk-red-hover: #a00c24;
+  --uhk-red-light: rgba(200, 16, 46, 0.08);
+  --uhk-prf-green: #688e26;
+  
+  /* Layout & Surface */
+  --uhk-bg-body: #ffffff;
+  --uhk-bg-sidebar: #f8fafc;
+  --uhk-bg-muted: #f1f5f9;
+  --uhk-border: #e2e8f0;
+  --uhk-border-subtle: #edf2f7;
+  
+  /* Typography */
+  --uhk-font-heading: 'Outfit', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --uhk-font-body: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --uhk-text-main: #1e293b;
+  --uhk-text-muted: #64748b;
+  --uhk-text-light: #94a3b8;
+  
+  /* Antora Theme Overrides */
+  --navbar-background: #ffffff;
+  --navbar-font-color: var(--uhk-black);
+  --navbar-border-color: var(--uhk-border);
+  --nav-background: var(--uhk-bg-sidebar);
+  --body-font-family: var(--uhk-font-body);
+  --body-font-color: var(--uhk-text-main);
+  --body-background: var(--uhk-bg-body);
+  --link-font-color: var(--uhk-red);
+  --link_hover-font-color: var(--uhk-red-hover);
+}
+
+body {
+  font-family: var(--uhk-font-body);
+  color: var(--uhk-text-main);
+  background-color: var(--uhk-bg-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.uhk-header {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid var(--uhk-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.uhk-header .navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.uhk-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.uhk-brand-logo {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+.uhk-brand-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 2px solid var(--uhk-border);
+  padding-left: 0.85rem;
+}
+
+.uhk-brand-faculty {
+  font-family: var(--uhk-font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--uhk-text-muted);
+  line-height: 1.2;
+}
+
+.uhk-brand-thesis {
+  font-family: var(--uhk-font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--uhk-black);
+  line-height: 1.2;
+}
+
+.uhk-nav-link {
+  font-family: var(--uhk-font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--uhk-text-main) !important;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.uhk-nav-link:hover {
+  color: var(--uhk-red) !important;
+  background-color: var(--uhk-bg-muted);
+}
+
+.uhk-btn-primary {
+  background-color: var(--uhk-black) !important;
+  color: #ffffff !important;
+  font-family: var(--uhk-font-heading);
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  padding: 0.45rem 1rem !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  border: 1px solid var(--uhk-black) !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+.uhk-btn-primary:hover {
+  background-color: var(--uhk-red) !important;
+  border-color: var(--uhk-red) !important;
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.25);
+}
+
+/* ==========================================================================
+   NAVIGATION SIDEBAR (Levé menu kapitol)
+   ========================================================================== */
+.nav-container {
+  background-color: var(--uhk-bg-sidebar) !important;
+  border-right: 1px solid var(--uhk-border);
+}
+
+.nav {
+  font-family: var(--uhk-font-body);
+}
+
+.nav-panel-menu {
+  padding: 1rem 0.5rem;
+}
+
+.nav-menu .nav-list {
+  padding-left: 0.75rem;
+}
+
+.nav-menu > .nav-list {
+  padding-left: 0;
+}
+
+.nav-item {
+  margin-bottom: 2px;
+}
+
+.nav-link {
+  color: var(--uhk-text-main) !important;
+  font-size: 0.92rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  display: block;
+  transition: all 0.15s ease;
+  line-height: 1.4;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: var(--uhk-red) !important;
+}
+
+/* Aktivní položka v navigaci */
+.nav-item.is-current-page > .nav-link,
+.nav-item.is-active > .nav-link {
+  background-color: var(--uhk-red-light) !important;
+  color: var(--uhk-red) !important;
+  font-weight: 600;
+  border-left: 3px solid var(--uhk-red);
+  padding-left: calc(0.75rem - 3px);
+}
+
+/* Skrýt přepínač verzí pokud je jen jedna */
+.nav-panel-explore {
+  border-top: 1px solid var(--uhk-border);
+  background-color: var(--uhk-bg-sidebar) !important;
+}
+
+/* ==========================================================================
+   HLAVNÍ TEXT DIPLOMOVÉ PRÁCE (.doc)
+   ========================================================================== */
+.main {
+  background-color: #ffffff;
+}
+
+.doc {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 5rem 2rem;
+  font-size: 1.05rem;
+  line-height: 1.72;
+  color: var(--uhk-text-main);
+}
+
+/* Nadpisy */
+.doc h1 {
+  font-family: var(--uhk-font-heading);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--uhk-black);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--uhk-border-subtle);
+  position: relative;
+}
+
+.doc h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 60px;
+  height: 2px;
+  background-color: var(--uhk-red);
+}
+
+.doc h2 {
+  font-family: var(--uhk-font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--uhk-black);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.doc h3 {
+  font-family: var(--uhk-font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--uhk-charcoal);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.doc h4, .doc h5, .doc h6 {
+  font-family: var(--uhk-font-heading);
+  font-weight: 600;
+  color: var(--uhk-text-main);
+}
+
+.doc p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+/* Odkazy */
+.doc a {
+  color: var(--uhk-red);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200, 16, 46, 0.25);
+  transition: all 0.15s ease;
+}
+
+.doc a:hover {
+  color: var(--uhk-red-hover);
+  border-bottom-color: var(--uhk-red-hover);
+}
+
+/* Seznamy */
+.doc ul, .doc ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.75rem;
+}
+
+.doc li {
+  margin-bottom: 0.35rem;
+}
+
+/* Blokové citace (Admonitions - NOTE, TIP, IMPORTANT) */
+.doc .admonitionblock {
+  margin: 1.75rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.doc .admonitionblock > table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--uhk-bg-sidebar);
+  border: 1px solid var(--uhk-border);
+  border-left-width: 5px;
+}
+
+.doc .admonitionblock.note > table {
+  border-left-color: #0284c7;
+}
+
+.doc .admonitionblock.tip > table {
+  border-left-color: var(--uhk-prf-green);
+}
+
+.doc .admonitionblock.important > table {
+  border-left-color: var(--uhk-red);
+}
+
+.doc .admonitionblock.warning > table {
+  border-left-color: #ea580c;
+}
+
+.doc .admonitionblock td.icon {
+  width: 80px;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-family: var(--uhk-font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.doc .admonitionblock.note td.icon { color: #0284c7; }
+.doc .admonitionblock.tip td.icon { color: var(--uhk-prf-green); }
+.doc .admonitionblock.important td.icon { color: var(--uhk-red); }
+.doc .admonitionblock.warning td.icon { color: #ea580c; }
+
+.doc .admonitionblock td.content {
+  padding: 1rem 1.25rem 1rem 0;
+  font-size: 0.98rem;
+}
+
+/* Tabulky */
+.doc table.tableblock {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  border: 1px solid var(--uhk-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.doc table.tableblock th.tableblock {
+  background-color: var(--uhk-bg-muted);
+  color: var(--uhk-black);
+  font-family: var(--uhk-font-heading);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--uhk-border);
+  text-align: left;
+}
+
+.doc table.tableblock td.tableblock {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--uhk-border-subtle);
+}
+
+.doc table.tableblock tr:nth-child(even) td.tableblock {
+  background-color: rgba(248, 250, 252, 0.6);
+}
+
+/* Popisky obrázků a tabulek */
+.doc .title,
+.doc .caption {
+  font-family: var(--uhk-font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--uhk-text-muted);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   PRAVÝ PANEL S OBSAHEM STRÁNKY (TOC)
+   ========================================================================== */
+.toc-sidebar {
+  border-left: 1px solid var(--uhk-border);
+  background-color: #ffffff;
+}
+
+.toc .toc-menu {
+  font-family: var(--uhk-font-heading);
+  padding: 1.5rem 1rem;
+}
+
+.toc .toc-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--uhk-text-light);
+  margin-bottom: 0.75rem;
+}
+
+.toc .toc-menu a {
+  color: var(--uhk-text-muted) !important;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  display: block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+.toc .toc-menu a:hover {
+  color: var(--uhk-red) !important;
+  background-color: var(--uhk-bg-muted);
+}
+
+/* ==========================================================================
+   PATIČKA (FOOTER)
+   ========================================================================== */
+.uhk-footer {
+  background-color: var(--uhk-black) !important;
+  color: #f1f5f9 !important;
+  border-top: 4px solid var(--uhk-red);
+  padding: 3rem 1.5rem 2rem 1.5rem !important;
+  font-family: var(--uhk-font-body);
+}
+
+.uhk-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.uhk-footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.uhk-footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.uhk-footer-uni {
+  font-family: var(--uhk-font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.uhk-footer-sub {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+.uhk-footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.uhk-footer-links a {
+  font-family: var(--uhk-font-heading);
+  font-size: 0.9rem;
+  color: #cbd5e1 !important;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.uhk-footer-links a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.uhk-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.uhk-footer-copy {
+  margin: 0;
+}
+
+.uhk-footer-note {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .uhk-footer-top {
+    flex-direction: column;
+  }
+  .uhk-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
