@@ -19,6 +19,7 @@
 :bibliography-database: ../modules/ROOT/attachments/literatura.bib
 :bibliography-style: ../modules/ROOT/attachments/iso690-author-date-cs.csl
 :bibliography-hacks: none
+:bibliography-locale: cs-CZ
 include::../modules/ROOT/partials/metadata.adoc[]
 
 // ---- Úvodní strany (obálku vykreslí převodník z metadat) ----

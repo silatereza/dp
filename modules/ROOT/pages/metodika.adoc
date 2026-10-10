@@ -23,36 +23,139 @@
 
 == Intervence: digitální hra Strážci světla
 
+// Koncept textu této podkapitoly byl připraven s pomocí AI z dokumentace a zdrojového kódu hry (C:\dp\uhk).
+// Zkontrolovat, upravit vlastním stylem a uvést v deklaraci využití AI.
+// Parametry úrovní ověřeny v kódu hry ve verzi použité 17. 6. 2026; kde se dokumentace a kód lišily, platí kód.
+
+Intervencí ve výzkumu byla autorkou vytvořená webová kooperativní hra _Strážci světla_ (v rozhraní hry také
+_Echo v Mlžném lese_). Hra je určena žákům 4. a 5. ročníku základní školy a hraje se ve dvojicích na tabletech
+nebo noteboocích. Jejím záměrem je nabídnout žákům společný zážitek spolupráce v situaci, kdy o svém parťákovi
+nevědí nic jiného než to, jak se ve hře chová, a tento zážitek následně zpracovat v reflexi.
+
 === Teoretické ukotvení hry
 
-// Vazba úrovní hry na konstrukty z teorie (tabulka úroveň → téma → konstrukt → zdroj), např.:
-// Úroveň 1 Spolehnutí ve tmě – důvěra, přebírání odpovědnosti (farber2017limits – hra Way)
-// Úroveň 2 Sdílené teplo – ohleduplnost, sdílení zdrojů (hromek2009promoting – sdílení, férovost)
-// Úroveň 3 Skleněný most – podpora × posměch, chování pod tlakem (thornberg2022associations – role přihlížejících)
-// Úroveň 4 Kód pravdy – upřímnost, dilema důvěry (vězňovo dilema)
-// Reflexe – odhalení identity, sdílení zážitku (hromek2009promoting, Tab. 3; farber2017limits – reflexe)
-// Anonymita + cílené párování – hypotéza kontaktu (Allport); kooperace místo soutěže, žádné žebříčky
-// (granic2014benefits; schrader2023serious).
+Návrh hry vychází z předpokladu, že klima třídy je utvářeno kvalitou vzájemných vztahů mezi žáky
+cite:[thornberg2022associations] a že hry mohou být účinným prostředkem sociálního a emočního učení,
+protože od hráčů přirozeně vyžadují střídání, sdílení, férovost a sebeovládání cite:[hromek2009promoting].
+Prosociální účinky digitálních her se přitom spojují především s kooperativním, nikoli soutěživým hraním
+cite:[granic2014benefits]; spolupráce se ve výzkumech výukových her ukazuje jako účinnější než soutěž,
+která může vyvolávat sociální tlak a snižovat zapojení části žáků cite:[schrader2023serious].
+Hra proto neobsahuje body ani žebříčky, nesrovnává žáky mezi sebou a jediným měřítkem úspěchu je zdolání
+překážek ve dvojici. Tím se zároveň odlišuje od gamifikace, tedy pouhého přidávání herních prvků do neherních
+činností cite:[hamari2014does].
+
+Druhým východiskem je řízená anonymita. Žáci během hry vystupují pod zvířecími přezdívkami a s parťákem
+mohou komunikovat jen prostřednictvím herních signálů a tlačítek, nikoli volným textem. Vzájemný vztah se tak
+utváří pouze na základě chování ve hře, bez vlivu dosavadních rolí a předsudků ve třídě. Dvojice sestavuje
+učitel cíleně tak, aby spolu hráli žáci s odlišným sociometrickým postavením. Tento postup odpovídá hypotéze
+kontaktu, podle níž kontakt za rovnocenných podmínek a se společným cílem snižuje předsudky mezi skupinami.
+// TODO doplnit citaci hypotézy kontaktu (Allport 1954; Pettigrew & Tropp 2006) po opatření zdrojů.
+Blízký princip uplatňuje hra _Way_, v níž dva anonymní hráči spolupracují pouze neverbálně a postupně si
+získávají vzájemnou důvěru cite:[farber2017limits].
+
+Každá ze čtyř úrovní hry modeluje jedno téma vztahů ve třídě (viz <<tab-hra-urovne>>). Po herní části
+následuje reflexe, v níž dojde k odhalení identity parťáka a žáci si mohou o zážitku napsat. Reflexe propojuje
+herní zkušenost se skutečným životem třídy a vrací hráče z herních rolí k vlastní identitě
+cite:[hromek2009promoting]; bez ní by zážitek z hry zůstal uzavřen ve hře cite:[farber2017limits].
+
+[[tab-hra-urovne]]
+.Úrovně hry Strážci světla a jejich zaměření
+[cols="2,2,3,3",options="header"]
+|===
+| Úroveň | Téma | Herní situace | Související složky klimatu
+
+| 1 Spolehnutí ve tmě | důvěra, odpovědnost za druhého | jeden hráč vede druhého, který nic nevidí | důvěra, bezpečí, spolupráce
+| 2 Sdílené teplo | ohleduplnost, sdílení | hráči si musí střídat jediný zdroj tepla | spolupráce, kamarádství
+| 3 Skleněný most | podpora a posměch pod tlakem | jeden hráč plní úkol, druhý ho může podpořit, nebo se mu vysmát | respekt, bezpečí, pohoda
+| 4 Kód pravdy | upřímnost, důvěra | hráči si posílají části kódu a mohou poslat pravdu, nebo lež | důvěra, respekt
+| Reflexe | zpracování zážitku | odhalení parťáka, vzkaz o bezpečí, volný chat | pohoda, kamarádství
+|===
+
+[.zdroj]
+Zdroj: vlastní zpracování.
 
 === Popis hry
 
-// Cílová skupina (4.–5. ročník, tablety/notebooky), herní příběh, role (zvířecí přezdívky, Sova × Rys),
-// průběh čtyř úrovní a závěrečné reflexe (statistiky, odhalení parťáka, chat).
-// Úrovně podrobně podle C:\dp\uhk\docs\GAME_MODULES_DEEP_DIVE.md; obrazovky hry jako obrázky nebo příloha
-// (snímky obrazovky bez jmen žáků).
+Na začátku se žák přihlásí svým školním účtem. Hra mu přidělí zvířecí přezdívku a avatar a zobrazí sdělení,
+že ho parťák uvidí pouze pod touto identitou. Jakmile se přihlásí oba členové dvojice, hra začne. Každá
+úroveň začíná instrukcí v modálním okně, kterou musí žák potvrdit tlačítkem „Přečetl jsem a rozumím“.
+Stejně se potvrzují i důležitá hlášení během hry (pád do pasti, zmrznutí, změna kódu). Toto řešení zohledňuje
+pomalejší tempo čtení mladších žáků. Úrovně jsou asymetrické: každý hráč má jinou roli a vidí jiné informace,
+takže úkol nelze splnit bez spolupráce.
+
+V *první úrovni (Spolehnutí ve tmě)* se dvojice pohybuje po mřížce 10 × 10 polí, na které je náhodně
+rozmístěno 24 zdí a 6 pastí. Start a cíl jsou od sebe vzdáleny alespoň 10 polí a nejkratší cesta mezi nimi
+má alespoň 15 kroků. Navigátor vidí celou mapu, ale nemůže se pohybovat. Posílá parťákovi signály
+(nahoru, dolů, vlevo, vpravo, stop, past), které se mu zobrazí jako velké blikající symboly. Slepý poutník
+vidí jen tmu a svou pozici a pohybuje se podle signálů. Šlápne-li do pasti, vrací se na start a navigátorovi
+se na tři sekundy zablokuje ovládání. Úroveň končí, když poutník dojde do cíle.
+
+Ve *druhé úrovni (Sdílené teplo)* musí dvojice společně vydržet 120 sekund v mrazu. Každý hráč má ukazatel
+tepla v rozsahu 0–100 %, ale jen jeden z nich drží hřejivý krystal. Teplo držitele roste, teplo druhého hráče
+klesá, a hráči si proto musejí krystal předávat. Hra se postupně ztěžuje: v prvních 40 sekundách hráč bez
+krystalu ztrácí 2 % za sekundu a držitel získává 4 %, mezi 40. a 80. sekundou je ztráta i zisk 4 % za sekundu
+a v závěrečné „vánici“ ztráta stoupne na 7 % a zisk na 5 % za sekundu. Mrznoucí hráč může poslat signál
+„Mrznu!“, který se držiteli krystalu zobrazí jako výrazné varování. Klesne-li teplota kteréhokoli hráče na
+nulu, čas se vrací na začátek.
+
+Ve *třetí úrovni (Skleněný most)* se oběma hráčům na několik sekund zobrazí na mřížce cesta z pochozích
+dlaždic, která pak zmizí. Ve výchozím nastavení jde o mřížku 5 × 5, 7 dlaždic a náhled 5 sekund; učitel může
+parametry změnit v administraci.
+// TODO ověřit, zda bylo 17. 6. 2026 použito výchozí nastavení mostu.
+Aktivní hráč se snaží cestu zopakovat, při chybě začíná pokus znovu a má tři pokusy. Jeho parťák mezitím
+sleduje postup a může posílat průběžnou podporu (👏, povzbudivá animace a text) nebo posměch (😜, rušivá
+animace a text). Na konci pokusů hra nepokračuje, dokud sledující hráč nezvolí finální reakci – podporu (👏),
+nebo výsměch (😂). Pokud aktivní hráč neuspěje, role se vymění a hra pokračuje na nově vygenerovaném mostě.
+Úroveň tak záměrně staví žáka do situace, kdy se rozhoduje, zda partnera pod tlakem podpoří.
+
+Ve *čtvrté úrovni (Kód pravdy)* je brána z lesa zamčena pětimístným kódem. Každý hráč zná jen jeho část:
+jeden první dva znaky, druhý poslední tři. Svou část musí parťákovi poslat a může přitom zvolit, zda pošle
+pravdivý, nebo zfalšovaný úlomek. Hra pravdivost nijak neověřuje, hráči to zjistí až při pokusu o otevření
+brány. Po třech chybných pokusech se kód změní. Když dvojice zadá správný kód, brána propustí jen toho hráče,
+který poslal pravdu, kdo lhal, zůstává uvězněn. Výsledkem tak může být společný únik, únik jen jednoho
+hráče, nebo uvěznění obou. Úroveň má podobu zjednodušeného dilematu důvěry a upřímnosti.
+
+Do *reflexe* přejde dvojice, až oba hráči potvrdí výsledek čtvrté úrovně a učitel reflexi odemkne. Žáci
+nejprve uvidí přehled svého společného výkonu (pády v první úrovni, podpory a posměchy na mostě, finální
+reakce, pokusy u brány) a vzkaz o bezpečí: „Ať už se během hry v Mlžném lese stalo cokoliv – ať už vám parťák
+poslal podporu, nebo se vám vysmál – pamatujte, že toto byla jen hra. Nyní jste zpátky v bezpečí své třídy,
+kde jste parťáci a můžete si o všem otevřeně popovídat.“ Pokud si hráči na mostě poslali více podpor než
+posměchů, získají ocenění „Strážci souznění“. Barevný panel shrne výsledek u brány. Poté si každý hráč
+sám odkryje kartu se skutečným jménem a avatarem parťáka a textem „Tento hráč ti věřil, i když tě neviděl.“
+Nakonec se otevře chat, v němž si žáci už pod svými jmény mohou napsat, jak hru prožívali.
+
+// Obrázky: snímky obrazovky jednotlivých úrovní a reflexe (bez jmen žáků) – vložit sem nebo do přílohy, např.:
+// .Úroveň 1 Spolehnutí ve tmě – pohled navigátora
+// image::hra-uroven1.png[Úroveň 1 hry Strážci světla,width=80%,align=center]
 
 === Technické řešení
 
-// Stručně: webová aplikace (HTML, JavaScript), Firebase (Realtime Database, Cloud Functions), přihlášení
-// školním účtem, pseudonymní role, učitelský panel (párování, monitoring, odemčení reflexe, export dat).
-// Podrobnosti C:\dp\uhk\docs\architecture.md, security.md. Odkaz na zdrojový kód (repozitář/příloha) – rozhodnout.
+Hra je webová aplikace napsaná v jazycích HTML, CSS a JavaScript a běží v internetovém prohlížeči bez
+instalace. Stav hry se v reálném čase synchronizuje mezi zařízeními obou hráčů přes databázi Firebase
+Realtime Database. Žáci se přihlašují školními účty Google. Párování do dvojic a přiřazení přezdívek
+zajišťuje serverová funkce (Firebase Cloud Functions) podle seznamu, který předem nahraje učitel. Propojení
+skutečného jména s přezdívkou je uloženo jen na serveru a do zařízení žáka se nedostane. Bezpečnostní pravidla
+databáze povolují žákovi přístup pouze do vlastní herní místnosti a jméno parťáka se zobrazí až po odemčení
+reflexe učitelem. Aby se dvojice během hry nerozpadla, nemají žáci v herním rozhraní možnost odhlášení.
+
+Učitel hru řídí z administrátorského rozhraní. Nahraje v něm seznam žáků a dvojic, nastaví parametry třetí
+úrovně, v reálném čase sleduje, v jaké fázi se jednotlivé dvojice nacházejí a zda jsou připojeny, může restartovat
+místnost a odemyká reflexi. Hra průběžně zaznamenává ukazatele jednotlivých úrovní a zprávy z reflexního
+chatu. Učitel je může zobrazit v přehledu a exportovat do formátu CSV. Tento export byl ve výzkumu zdrojem
+dat o průběhu hry. Při lichém počtu žáků hra počítá s tím, že chybějícího parťáka doplní dospělý.
+// Rozhodnout: uvést odkaz na zdrojový kód / veřejnou adresu hry, nebo kód přiložit (příloha / CD).
 
 === Průběh intervence
 
-// 17. 6. 2026, jedno sezení ve třídě; 13 dvojic.
-// Párování cílené: oblíbenější + méně oblíbený žák podle pre-testu v kombinaci s pedagogickým úsudkem;
-// lichý počet → jedna žákyně hrála s asistentkou pedagoga.
-// Role učitelky (spuštění, monitoring, odemčení reflexe), délka sezení, případné obtíže.
+Hra proběhla 17. 6. 2026 ve výzkumné třídě v jednom vyučovacím sezení. Hrálo 13 dvojic: 12 dvojic tvořili
+žáci a v jedné dvojici hrála žákyně s asistentkou pedagoga, protože počet žáků byl lichý. Dvojice sestavila
+třídní učitelka cíleně, vždy ze žáka s výraznějším a slabším postavením ve třídě, na základě pre-testu
+v kombinaci s vlastním pedagogickým úsudkem. Učitelka hru spustila, během hraní sledovala průběh v
+administrátorském rozhraní a po dokončení herní části odemkla reflexi. Všech 13 dvojic prošlo všemi čtyřmi
+úrovněmi i reflexí s odhalením identity parťáka.
+// TODO doplnit: délka sezení / vyučovací hodina, použitá zařízení (tablety/notebooky), uvedení hry žákům,
+// případné technické obtíže, zda následovala i společná ústní reflexe ve třídě. Reflexní chat probíhal
+// podle časů zpráv přibližně od 11:15 do 11:45.
 
 == Metody sběru dat
 
