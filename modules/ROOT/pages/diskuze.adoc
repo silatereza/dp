@@ -1,6 +1,48 @@
 = Diskuze
 
-// Interpretace hlavních výsledků a jejich zasazení do kontextu literatury,
-// limity práce a doporučení pro praxi.
+// KOSTRA – pokyny v komentářích (do PDF se netisknou). Text píše autorka. Rozsah alespoň 5 stran.
+// Interpretace výsledků, zasazení do literatury, limity, doporučení. Tady už je místo pro "proč".
+// Kauzalitu formulovat opatrně (design jedné skupiny, časování).
 
-Text diskuze.
+== Shrnutí hlavních zjištění
+
+// 3–5 vět: atmosféra 79 → 90 % (6 ze 7 složek), sociální struktura (indexy vlivu) beze změny,
+// žáci s nízkým statusem bez zlepšení, ve hře převaha podpory a pravdomluvnosti.
+
+== Atmosféra ve třídě
+
+// Interpretace VO1: nejvíce vzrostly složky odpovídající tématům hry (důvěra, spolupráce, bezpečí);
+// celkové skóre bylo před intervencí dva roky stabilní (75–79 %).
+// Alternativní vysvětlení: konec 1. stupně, konec školního roku, další aktivity učitelky, dozrávání.
+// Srovnání s literaturou: granic2014benefits, hromek2009promoting, farber2017limits.
+
+== Sociální struktura třídy a vybraní žáci
+
+// Proč se vztahová síť nezměnila, i když se zlepšilo vnímání klimatu: jednorázová intervence, změna
+// klimatu trvá měsíce (Millerová 2002; mares2012klima); stabilita sociometrických pozic.
+// VO2 a VO3: regrese k průměru, malý počet žáků; izolace nepřítomného žáka jako artefakt měření;
+// podmínky hypotézy kontaktu (krátký kontakt, chybí opakování).
+// Citlivě, bez detailů o konkrétních dětech.
+
+== Chování žáků ve hře a reflexe
+
+// Převaha podpory nad posměchem a pravdy nad lží; reflexní chat bez vedení přešel v "spam" →
+// potřeba strukturované reflexe vedené učitelem (hromek2009promoting – facilitace; farber2017limits).
+
+== Srovnání s obdobnými výzkumy
+
+// innemanova2009ovlivneni (5. roč., hry, SO-RA-D před/po – také bez výrazné změny struktury);
+// Way (Schrier & Shaenfield 2016); Classcraft (Sanchez et al. 2016).
+
+== Limity výzkumu
+
+// Jedna třída, bez kontrolní skupiny; dlouhá prodleva pre-test → intervence a krátká intervence → post-test;
+// změna složení třídy; nepřítomní žáci (pre-test 22/25); atmosféra jen za třídu, hodnoty z grafu;
+// neznámé psychometrické vlastnosti nástroje; dvojí role autorky; reaktivita a efekt novosti;
+// zdroje: gundry2019validity, hamari2014does (s. 3029), Shadish, Cook & Campbell 2002 (dohledat).
+
+== Doporučení pro praxi a další výzkum
+
+// Pro učitele: hra jako podnět k rozhovoru o vztazích, reflexe vedená dospělým, opakování.
+// Pro výzkum: kontrolní třída, opakovaná měření, data jednotlivců, delší intervence, kvalitativní rozhovory.
+// Úpravy hry (strukturovaná reflexe, omezení spamu v chatu).

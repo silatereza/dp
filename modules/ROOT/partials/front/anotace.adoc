@@ -4,6 +4,9 @@
 {author-iso}. _{doctitle}_. {city}: {faculty} Univerzity Hradec Králové, {thesis-year}. {pages-count} s. {thesis-type-cap} závěrečná práce.
 
 // Základní údaje charakterizující v českém jazyce obsah a výsledky práce.
+// KOSTRA: 1 odstavec (cca 100–200 slov) – téma, cíl, metoda (hra + sociometrie před a po, jedna třída 5. ročníku),
+// hlavní výsledky, závěr. Píše se nakonec. Pozor: v českých klíčových slovech (metadata.adoc) je anglické
+// "elementary school" – opravit (např. "1. stupeň ZŠ").
 
 Text anotace.
 

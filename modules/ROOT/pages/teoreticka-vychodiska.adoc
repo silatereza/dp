@@ -1,22 +1,124 @@
 = Teoretická východiska
 
-// Systematické shrnutí poznatků na základě rešerše odborné literatury (primární
-// zdroje, přehledové články, meta-analýzy). Logicky členěno do podkapitol.
+// KOSTRA – pokyny v komentářích (do PDF se netisknou). Text píše autorka.
+// Rozsah orientačně 20–30 stran (poznámky z metodologie: úvod/teorie alespoň 15 stran).
+// Zdroje: katalog podklady/literatura/PREHLED.md, BibTeX podklady/literatura/kandidati.bib
+// (klíče níže, např. mares2012klima). Citace v textu: cite:[klic] – funguje až po importu do Zotera
+// a exportu do attachments/literatura.bib. Požadavek: ~35 zdrojů, 90 % ne starších 10 let, ≥ 2 zahraniční.
+// Primární zdroje citovat z originálu, kvalifikační práce jen výjimečně.
+//
+// Logická linie kapitoly (ať je na konci jasný "most" k vlastní hře a měření):
+// klima třídy → jak ho měřit → co ho ovlivňuje (vztahy, SEL, kooperace, kontakt) → digitální hry
+// jako nástroj → jak má být hra navržena (mechaniky, reflexe) → shrnutí.
 
-Úvodní text kapitoly.
+// Úvodní odstavec kapitoly: co kapitola obsahuje a proč v tomto pořadí.
 
-== Nadpis úroveň 2
+== Klima třídy
 
-Text.
+=== Vymezení pojmů prostředí, atmosféra a klima třídy
 
-=== Nadpis úrovně 3
+// Rozlišení prostředí × klima × atmosféra (krátkodobá × dlouhodobá).
+// Zdroje: mares2012klima (s. 6–8); Grecmanová 2008; Čapek 2010; Lašek 2001 (dohledat).
+// Definice klimatu jako ustálených postupů vnímání a hodnocení aktérů: mares2005role (s. 61).
 
-Text.
+=== Klima třídy jako skupinový jev
 
-==== Nadpis úrovně 4
+// Klima je sociálně sdílené, ne součet individuálních názorů; problém průměrování a jednotky analýzy.
+// Moosovy domény (vztahová, osobní růst, údržba systému), Bronfenbrenner (třída jako mikrosystém).
+// Zdroje: mares2005role (s. 62); jezek2006moznosti; Moos 1979 (dohledat); thornberg2022associations (s. 1199).
 
-Text navazující na nadpis čtvrté úrovně.
+=== Třída mladšího školního věku a vývoj třídního kolektivu
 
-===== Nadpis úrovně 5
+// Stadia vývoje třídy, prvotní koheze ve 4.–6. ročníku, vznik "veřejného mínění" a hierarchie.
+// Proč je 4.–5. ročník vhodný pro intervenci. Zdroje: braun2014pedagogicko (s. 98); Hermochová 2005 (dohledat).
 
-Text navazující na nadpis páté úrovně.
+=== Význam klimatu pro žáky
+
+// Pohoda, sounáležitost, učení; klima jako ochranný faktor proti šikaně (role přihlížejících).
+// Zdroje: thornberg2022associations; mares2006skola; hromek2009promoting (s. 3–4); roffey2012developing.
+
+=== Možnosti ovlivňování klimatu třídy
+
+// Tříúrovňový model intervencí (univerzální, selektivní, indikované); proměnné změny klimatu (Freiberg);
+// změna klimatu trvá měsíce (Millerová 2002 – dohledat). Hra = univerzální intervence pro celou třídu.
+// Zdroje: mares2012klima (s. 25–26); Mareš 2005b Intervence ovlivňující psychosociální klima školy (dohledat);
+// innemanova2009ovlivneni a salvetova2006techniky jen jako příklady obdobných prací.
+
+== Diagnostika klimatu a vztahů ve třídě
+
+=== Sociometrie
+
+// Moreno; sociogram; přitažlivost, odpudivost, indiference; sociometrické pozice (hvězda, outsider,
+// odmítaný, izolovaný). Index vlivu a obliby (SO-RA-D, Hrabal).
+// Zdroje: braun2014pedagogicko (s. 99–102); Hrabal 2002, Slavíková et al. 2005 (dohledat); Dittrich 1992.
+
+=== Nástroje pro měření klimatu třídy
+
+// Přehled: MCI "Naše třída" (3.–6. roč.), CES, Klima školní třídy (NÚV, 2. st.), SO-RA-D, nástroj
+// Klima třídy (proskoly.cz) – použitý ve výzkumu (podrobně v Metodice). Zdůvodnit výběr.
+// Zdroje: mares2012klima; jezek2006moznosti; braun2014pedagogicko (s. 104); Lašek & Mareš 1991 (dohledat).
+
+=== Etické aspekty sociometrie u dětí
+
+// Sociometrie není anonymní, negativní volby, riziko stigmatizace, interpretace jen proškolenými;
+// u dětí ukončit pozitivní zkušeností.
+// Zdroje: braun2014pedagogicko (s. 102); hejlova2015metodologicke (s. 240–241).
+
+== Vztahy mezi žáky a sociální a emoční učení
+
+=== Sociální a emoční učení
+
+// SEL kompetence (empatie, respekt, sdílení, řešení konfliktů, přiznání chyby); vliv na sounáležitost a šikanu.
+// Zdroje: hromek2009promoting (s. 2–4); roffey2012developing; Payton et al. 2008 (dohledat).
+
+=== Spolupráce a soutěž
+
+// Kooperativní učení zvyšuje empatii a přijetí, soutěž mnoho žáků demotivuje → kooperativní design hry.
+// Zdroje: hromek2009promoting (s. 8–9); Johnson & Johnson 1999, Kasíková 1997 (dohledat); schrader2023serious (s. 1261).
+
+=== Hypotéza kontaktu
+
+// Kontakt za rovnocenných podmínek a se společným cílem snižuje předsudky → zdůvodnění cíleného
+// párování (oblíbený + odmítaný) a anonymity ve hře.
+// Zdroje: Allport 1954; Pettigrew & Tropp 2006 (obojí dohledat a ověřit).
+
+=== Prosociální chování, podpora a posměch
+
+// Role přihlížejících (obránci × posilovatelé), význam podpory spolužáků → úroveň "Skleněný most".
+// Zdroje: thornberg2022associations (s. 1199); Salmivalli (dohledat).
+
+== Digitální hry ve vzdělávání
+
+=== Vymezení pojmů
+
+// Hra, vážná hra (serious game), výuka založená na hrách (game-based learning), gamifikace – rozlišit.
+// Vlastní hra je vážná hra, ne gamifikace.
+// Zdroje: schrader2023serious (s. 1256–1257); hamari2014does (s. 3026); andreoletti2024game (s. 63);
+// Deterding et al. 2011, Becker 2021 (dohledat).
+
+=== Přínosy digitálních her
+
+// Kognitivní, motivační, emoční a sociální přínosy; prosociální účinky závisejí na kooperativním hraní;
+// riziko "chocolate-covered broccoli" (nezábavné vzdělávací hry).
+// Zdroje: granic2014benefits (s. 70–74); Clark et al. 2016, Wouters et al. 2013 (dohledat).
+
+=== Digitální hry, empatie a důvěra
+
+// Hry jako "stroje empatie" – možnosti a limity; případ hry Way (anonymní dvojice, vzájemné vedení, důvěra).
+// Zdroje: farber2017limits (s. 8–10, 24); Schrier & Shaenfield 2016, Greitemeyer 2010, 2013 (dohledat).
+
+=== Reflexe a debriefing
+
+// Reflexe propojuje herní zážitek s reálným životem; role facilitátora; návrat k vlastní identitě po hře.
+// Zdroje: hromek2009promoting (s. 12–14, Tab. 3); farber2017limits (s. 24–25, Schön); Crookall 1995 (dohledat).
+
+=== Výzkumy využití her pro vztahy a klima třídy
+
+// Classcraft (Sanchez et al. 2016 – v zadání, CHYBÍ ve složce, dohledat); metodické slabiny výzkumů her
+// (malé vzorky, chybí kontrola, efekt novosti): hamari2014does (s. 3029); gundry2019validity.
+
+== Shrnutí teoretických východisek
+
+// "Most" k empirické části: herní mechanika → psychologický proces → změna vztahů → měřený výstup.
+// Např. důvěra (slepá navigace), sdílení (krystal), podpora × posměch (most), upřímnost (kód) →
+// složky atmosféry důvěra, spolupráce, bezpečí, respekt a sociometrický vliv.

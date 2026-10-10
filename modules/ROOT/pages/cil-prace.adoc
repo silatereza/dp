@@ -1,24 +1,40 @@
 = Cíl práce, úkoly práce, výzkumné otázky a hypotézy
 
+// KOSTRA – pokyny v komentářích (do PDF se netisknou). Text píše autorka.
+
 == Cíl
 
-// Jednoznačné vymezení hlavního cíle; shodný se zadáním ve STAGu.
+// Hlavní cíl musí být shodný se zadáním ve STAGu. Znění ze zadání (podklad pro zadání VŠKP, 14. 11. 2024):
+// "Cílem diplomové práce je vytvořit a poté otestovat digitální výukový program, který bude simulovat reálné
+// sociální situace a umožní žákům rozvíjet své sociální dovednosti."
+// Pozor (probrat s vedoucím): cíl mluví o "sociálních dovednostech", měří se ale klima a vztahy ve třídě.
+// Případné dílčí cíle formulovat tak, aby odpovídaly tomu, co se skutečně měří.
 
 == Úkoly práce
 
-// Konkrétní kroky, které je třeba splnit; uvádějí se v přehledných bodech.
-
-. První úkol.
-. Druhý úkol.
+// Konkrétní kroky v bodech, např. (upravit podle skutečnosti):
+// . rešerše literatury ke klimatu třídy, sociometrii a digitálním hrám
+// . návrh a vývoj digitální hry Strážci světla (teoretické ukotvení úrovní)
+// . sociometrické šetření před intervencí (pre-test)
+// . realizace intervence ve třídě
+// . sociometrické šetření po intervenci (post-test)
+// . analýza a interpretace dat, formulace doporučení pro praxi
 
 == Výzkumné otázky
 
-// Konkrétní, jednoznačné a zodpověditelné; vycházejí z cíle práce.
+// Ze schváleného designu výzkumu (05/2025):
+// VO1: Zlepšila se atmosféra ve třídě po absolvování digitální hry?
+// VO2: Jaký dopad má digitální hra na žáky s nízkým sociometrickým statusem?
+// VO3: Nastaly změny mezi žáky, kteří mají největší pozitivní nebo negativní vliv na kolektiv třídy?
+// !!! Před finálním zněním rozhodnout s vedoucím: definice "nízkého statusu" a "největšího vlivu"
+// (v datech se překrývají – viz podklady/analyza/navrh-analyzy-vysledky.md, kap. 4).
+// Zvážit, zda VO1 formulovat popisně ("Jak se změnilo hodnocení atmosféry…"), protože atmosféra
+// je k dispozici jen za celou třídu.
 
 == Hypotézy
 
-// Pouze u kvantitativního výzkumu, obvykle 1 až 3 hlavní hypotézy.
-
-H~1~: Text hypotézy.
-
-H~0~: Text nulové hypotézy.
+// Doporučení: hypotézy vynechat a pracovat s výzkumnými otázkami (malý vzorek, data atmosféry jen za třídu).
+// Pokud vedoucí hypotézy požaduje, smysluplná je jen pro indexy vlivu, např.:
+// H0: Medián rozdílu kladného (záporného) vlivu žáků mezi pre-testem a post-testem je roven nule.
+// Pak sekci nadepsat a formulovat podle dohody; jinak tuto podkapitolu odstranit
+// (a upravit název kapitoly i nav.adoc).

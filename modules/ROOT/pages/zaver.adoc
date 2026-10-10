@@ -1,5 +1,10 @@
 = Závěr
 
-// Stručné shrnutí práce navazující na cíle a otázky z úvodu; bez nových informací.
-
-Text závěru.
+// KOSTRA – pokyny v komentářích (do PDF se netisknou). Text píše autorka. Rozsah 1–2 strany.
+// Bez nových informací a bez citací. Navázat na cíl a výzkumné otázky z úvodu.
+//
+// Osnova:
+// 1. Připomenout cíl práce a co bylo vytvořeno (hra Strážci světla) a ověřeno (sociometrie před a po).
+// 2. Stručné odpovědi na výzkumné otázky (jedna dvě věty ke každé).
+// 3. Hlavní přínos práce pro praxi učitele 1. stupně.
+// 4. Hlavní omezení jednou větou a směr dalšího výzkumu / vývoje hry.

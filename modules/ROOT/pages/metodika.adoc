@@ -1,11 +1,97 @@
 = Metodika
 
-// Výzkumný design, výzkumný soubor, metody sběru dat, zpracování a vyhodnocení dat.
+// KOSTRA – pokyny v komentářích (do PDF se netisknou). Text píše autorka.
+// Podklady: podklady/poznamky-k-praci.md (všechna rozhodnutí), podklady/analyza/navrh-analyzy-vysledky.md,
+// dokumentace hry C:\dp\uhk\README.md a C:\dp\uhk\docs\.
+// Úvodní odstavec: přehled kapitoly.
 
 == Výzkumný design
 
+// Kvantitativní design jedné skupiny s pre-testem a post-testem (bez kontrolní skupiny), doplněný
+// o data z průběhu hry a kvalitativní data (anonymní sdělení žáků, reflexní chat).
+// Starší měření téže třídy (12/2023, 1/2025) jako kontext / výchozí trend.
+// Časová osa: pre-test 6. 1. 2026 → hra 17. 6. 2026 (jedno sezení) → post-test 22. 6. 2026.
+// Zdroje k designu: Chráska 2007, Gavora 2000 (dohledat); delucchi2014measuring (vzor pre/post bez kontroly).
+
 == Výzkumný soubor
+
+// Záměrný výběr: vlastní třída autorky (třídní učitelka). 25 žáků 5. ročníku (8 chlapců, 17 dívek),
+// účast podmíněna souhlasem zákonných zástupců.
+// Změny složení: 2 žáci odešli ve 4. ročníku, 1 žákyně přišla do 5. ročníku (bez identifikujících detailů).
+// Respondenti: pre-test 22 z 25 (3 nepřítomní), post-test 24 z 25.
+// Nejmenovat školu ani obec (riziko identifikace).
+
+== Intervence: digitální hra Strážci světla
+
+=== Teoretické ukotvení hry
+
+// Vazba úrovní hry na konstrukty z teorie (tabulka úroveň → téma → konstrukt → zdroj), např.:
+// Úroveň 1 Spolehnutí ve tmě – důvěra, přebírání odpovědnosti (farber2017limits – hra Way)
+// Úroveň 2 Sdílené teplo – ohleduplnost, sdílení zdrojů (hromek2009promoting – sdílení, férovost)
+// Úroveň 3 Skleněný most – podpora × posměch, chování pod tlakem (thornberg2022associations – role přihlížejících)
+// Úroveň 4 Kód pravdy – upřímnost, dilema důvěry (vězňovo dilema)
+// Reflexe – odhalení identity, sdílení zážitku (hromek2009promoting, Tab. 3; farber2017limits – reflexe)
+// Anonymita + cílené párování – hypotéza kontaktu (Allport); kooperace místo soutěže, žádné žebříčky
+// (granic2014benefits; schrader2023serious).
+
+=== Popis hry
+
+// Cílová skupina (4.–5. ročník, tablety/notebooky), herní příběh, role (zvířecí přezdívky, Sova × Rys),
+// průběh čtyř úrovní a závěrečné reflexe (statistiky, odhalení parťáka, chat).
+// Úrovně podrobně podle C:\dp\uhk\docs\GAME_MODULES_DEEP_DIVE.md; obrazovky hry jako obrázky nebo příloha
+// (snímky obrazovky bez jmen žáků).
+
+=== Technické řešení
+
+// Stručně: webová aplikace (HTML, JavaScript), Firebase (Realtime Database, Cloud Functions), přihlášení
+// školním účtem, pseudonymní role, učitelský panel (párování, monitoring, odemčení reflexe, export dat).
+// Podrobnosti C:\dp\uhk\docs\architecture.md, security.md. Odkaz na zdrojový kód (repozitář/příloha) – rozhodnout.
+
+=== Průběh intervence
+
+// 17. 6. 2026, jedno sezení ve třídě; 13 dvojic.
+// Párování cílené: oblíbenější + méně oblíbený žák podle pre-testu v kombinaci s pedagogickým úsudkem;
+// lichý počet → jedna žákyně hrála s asistentkou pedagoga.
+// Role učitelky (spuštění, monitoring, odemčení reflexe), délka sezení, případné obtíže.
 
 == Metody sběru dat
 
-== Zpracování dat
+=== Nástroj Klima třídy
+
+// Popis nástroje (proskoly.cz): co žáci vyplňují, výstupy – atmosféra (7 složek, celkové skóre 0–100 %),
+// sociogramy kladných a záporných vazeb, vzájemné hodnocení vlastností, vliv žáka (kladný/záporný),
+// sociometrické pozice, anonymní sdělení. Administrace online.
+// !!! Doplnit z manuálu: jak se počítají indexy, reliabilita/validita (zatím chybí – vyžádat od proskoly.cz).
+// Uvést, že starší měření (M1, M2) proběhla ve starší verzi nástroje.
+
+=== Data ze hry
+
+// Export z učitelského rozhraní hry: ukazatele úrovní (pády, resety, podpory/výsměchy, volby pravda/lež,
+// pokusy), reflexní chat. Do výzkumu jen data výzkumné třídy.
+
+== Zpracování a analýza dat
+
+// Přepis výstupů reportů, pseudonymizace (kódy Z01–Z27, klíč uložen odděleně, mimo sdílená úložiště).
+// Atmosféra: popisně (data jen za třídu). Indexy vlivu: Wilcoxonův párový test (hlavní, zešikmené rozdělení),
+// párový t-test (doplňkově), velikost účinku, 95% IS; citlivostní analýza s přepočtem na počet respondentů.
+// Případové sledování vybraných žáků (VO2, VO3) popisně.
+// Obsahová analýza chatu a anonymních sdělení (kategorie, kódování autorkou, příp. druhý posuzovatel).
+// Software (Ruby skripty / JASP / Excel – podle toho, čím se výpočty ověří). Hladina významnosti α = 0,05.
+// Zdroje: Hendl 2004, Chráska 2007 (dohledat).
+
+== Etické aspekty výzkumu
+
+// Informovaný souhlas zákonných zástupců (příloha: vzor souhlasu); dobrovolnost; anonymizace a ochrana dat
+// (GDPR, zpracovatel proskoly.cz); hra bez žebříčků, důraz na bezpečí v reflexi; ukončení pozitivní zkušeností
+// (hejlova2015metodologicke); dvojí role autorky (učitelka, autorka hry, výzkumnice) a jak s ní bylo zacházeno;
+// postup při zjištění šikany. Etický kodex ČAPV; případné schválení etickou komisí (ověřit, zda proběhlo).
+
+== Využití nástrojů umělé inteligence
+
+// Povinná deklarace podle pokynu prorektorky UHK 01/2024 (čl. II.2): jaké nástroje, k čemu, jak byly
+// výstupy kriticky ověřeny. Průběžný přehled: podklady/poznamky-k-praci.md (sekce "Přehled využití AI").
+// Dosavadní využití (doplnit/upravit): sestavení dokumentu a PDF; rešerše a shrnutí podkladové literatury;
+// přepis sociometrických reportů z PDF a pseudonymizace dat; anonymizace exportu ze hry; statistické
+// výpočty; generování tabulek; návrh struktury kapitol a podklady k psaní; jazyková a věcná kontrola textu.
+// Výslovně uvést, že text práce psala autorka a jak ověřovala výstupy (např. přepočet statistik v JASP).
+// Pozn.: v pracovních poznámkách z metodologie jsou i výstupy Perplexity – pokud ovlivnily návrh, uvést.

@@ -1,6 +1,16 @@
 = Úvod
 
-// Stručné představení tématu, jeho aktuálnosti a problému, který práce řeší.
-// Rozsah přibližně 1 až 2 strany; věcně, přehledně a motivačně.
-
-Text úvodu s ukázkovou citací cite:[novak2021].
+// KOSTRA – pokyny v komentářích (do PDF se netisknou). Text píše autorka. Rozsah 1–2 strany.
+// Úvod se píše obvykle až nakonec, kdy je jasný obsah celé práce.
+//
+// Osnova odstavců:
+// 1. Téma a jeho aktuálnost: klima třídy jako podmínka pohody a učení žáků; vztahy ve třídě na konci
+//    1. stupně (období "prvotní koheze" – Braun 2014); digitální technologie a hry ve škole.
+//    Zdroje: Mareš & Ježek 2012; Thornberg et al. 2022; Granic et al. 2014.
+// 2. Problém: jak lze cíleně podpořit vztahy a klima ve třídě; potenciál kooperativních digitálních her,
+//    které modelují důvěru, sdílení, podporu a upřímnost (Hromek & Roffey 2009; Farber & Schrier 2017).
+// 3. Osobní motivace: autorka jako třídní učitelka a autorka hry (stručně, věcně).
+// 4. Cíl práce (jednou větou, shodně se zadáním) a způsob ověření (sociometrie před a po intervenci).
+// 5. Struktura práce: co obsahují jednotlivé kapitoly (teorie, cíl, metodika, výsledky, diskuze).
+// 6. Zmínka o využití nástrojů umělé inteligence a odkaz na jejich podrobnou deklaraci v kapitole Metodika
+//    (požadavek pokynu prorektorky UHK 01/2024, čl. II.2).
