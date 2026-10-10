@@ -32,6 +32,13 @@ jobs:
       - name: Build site with Antora
         run: npx antora antora-playbook.yml
 
+      - name: Ensure noindex and disable Jekyll
+        run: |
+          touch build/site/.nojekyll
+          if [ ! -f build/site/robots.txt ]; then
+            printf "User-agent: *\nDisallow: /\n" > build/site/robots.txt
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
