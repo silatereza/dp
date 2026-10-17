@@ -3,5 +3,9 @@
 
 // Nepovinné. Krátké poděkování vedoucímu práce, konzultantům, respondentům apod.
 // Pokud poděkování nechcete, odstraňte jeho vložení z pdf/dp.adoc.
+// Návrh – autorka upraví vlastními slovy. Poděkování vedoucímu práce (Mgr. Martin Kaliba, Ph.D.), případně
+// žákům a jejich rodičům doplnit podle uvážení.
 
-Poděkování.
+Děkuji Ing. Jiřímu Šílovi za technické vedení během psaní diplomové práce a za návrh nástrojů, které jsem při její
+přípravě využila: vývojového prostředí Antigravity a nástroje Claude Code, služeb Firebase a GitHub Pages
+a značkovacího jazyka AsciiDoc.

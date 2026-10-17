@@ -1,40 +1,65 @@
-= Cíl práce, úkoly práce, výzkumné otázky a hypotézy
+= Cíl práce, úkoly práce a výzkumné otázky
 
-// KOSTRA – pokyny v komentářích (do PDF se netisknou). Text píše autorka.
+// KONCEPT TEXTU – připravila AI na žádost autorky (17. 10. 2026) ze zadání práce (podklad pro zadání VŠKP
+// ve STAGu, 14. 11. 2024) a z rozhodnutí v podklady/poznamky-k-praci.md; autorka text dále upraví.
+// Komentáře (//) se do PDF netisknou.
 
 == Cíl
 
-// Hlavní cíl musí být shodný se zadáním ve STAGu. Znění ze zadání (podklad pro zadání VŠKP, 14. 11. 2024):
-// "Cílem diplomové práce je vytvořit a poté otestovat digitální výukový program, který bude simulovat reálné
-// sociální situace a umožní žákům rozvíjet své sociální dovednosti."
-// Pozor (probrat s vedoucím): cíl mluví o "sociálních dovednostech", měří se ale klima a vztahy ve třídě.
-// Případné dílčí cíle formulovat tak, aby odpovídaly tomu, co se skutečně měří.
+Diplomová práce se věnuje tématu třídního klimatu a jeho ovlivňování pomocí digitálních vzdělávacích her.
+*Cílem diplomové práce je vytvořit a poté otestovat digitální výukový program, který bude simulovat reálné
+sociální situace a umožní žákům rozvíjet své sociální dovednosti.*
+
+// Hlavní cíl je převzat doslovně ze zadání (STAG) – neměnit bez souhlasu vedoucího.
+// Pozor (probrat s vedoucím): cíl mluví o "sociálních dovednostech", ty se přímo neměří; dílčí cíle níže proto
+// popisují, co se skutečně zjišťuje (klima, vztahy, chování ve hře). Neměření dovedností uvést v Diskuzi (limity).
+
+Hlavní cíl je rozpracován do dílčích cílů:
+
+. navrhnout a vytvořit digitální hru pro dvojice žáků (Strážci světla), jejíž úrovně simulují sociální situace
+  založené na důvěře, sdílení, podpoře a upřímnosti;
+. ověřit hru ve výzkumném souboru, který tvoří žáci jedné třídy mladšího školního věku;
+. pomocí sociometrického šetření nástrojem Klima třídy před intervencí a po ní zjistit, jak se změnilo
+  klima třídy a vztahy mezi žáky;
+. popsat, jak se žáci v simulovaných situacích hry chovali a jak hru reflektovali.
 
 == Úkoly práce
 
-// Konkrétní kroky v bodech, např. (upravit podle skutečnosti):
-// . rešerše literatury ke klimatu třídy, sociometrii a digitálním hrám
-// . návrh a vývoj digitální hry Strážci světla (teoretické ukotvení úrovní)
-// . sociometrické šetření před intervencí (pre-test)
-// . realizace intervence ve třídě
-// . sociometrické šetření po intervenci (post-test)
-// . analýza a interpretace dat, formulace doporučení pro praxi
+K dosažení cíle bylo třeba splnit tyto úkoly:
+
+. zpracovat teoretická východiska ke klimatu školní třídy, k jeho zjišťování sociometrickými metodami
+  a k využití digitálních her v sociálním a emočním učení;
+. navrhnout design digitální hry Strážci světla a teoreticky ukotvit její jednotlivé úrovně, na jeho základě
+  vytvořit hru s využitím nástrojů umělé inteligence a vyzkoušet ji;
+. provést sociometrické šetření před intervencí (pre-test, leden 2026);
+. na základě pre-testu a pedagogického úsudku sestavit herní dvojice;
+. realizovat intervenci ve výzkumné třídě (červen 2026);
+. provést sociometrické šetření po intervenci (post-test, červen 2026);
+. zpracovat a anonymizovat získaná data, ze sociogramů zjistit kladné a záporné volby žáků
+  a vyhodnotit data ze hry;
+. odpovědět na výzkumné otázky, interpretovat zjištění ve vztahu k teorii a formulovat doporučení pro praxi.
+
+// Pokud vedoucí preferuje kratší formu, úkoly 3–6 lze sloučit do jednoho bodu "realizovat výzkum (pre-test,
+// intervence, post-test)".
 
 == Výzkumné otázky
 
-// Ze schváleného designu výzkumu (05/2025):
-// VO1: Zlepšila se atmosféra ve třídě po absolvování digitální hry?
-// VO2: Jaký dopad má digitální hra na žáky s nízkým sociometrickým statusem?
-// VO3: Nastaly změny mezi žáky, kteří mají největší pozitivní nebo negativní vliv na kolektiv třídy?
-// !!! Před finálním zněním rozhodnout s vedoucím: definice "nízkého statusu" a "největšího vlivu"
-// (v datech se překrývají – viz podklady/analyza/navrh-analyzy-vysledky.md, kap. 4).
-// Zvážit, zda VO1 formulovat popisně ("Jak se změnilo hodnocení atmosféry…"), protože atmosféra
-// je k dispozici jen za celou třídu.
+Výzkumné otázky vycházejí z cíle práce. Zadání předpokládá, že sociometrický screening před intervencí a po ní
+podá informace o vztazích ve třídě; otázky se proto zaměřují na klima třídy a vztahy mezi žáky. Protože hra
+spojuje do dvojic žáky s odlišným postavením ve třídě, sleduje samostatná otázka vazby mezi členy herních dvojic.
+Poslední otázka se vztahuje k samotnému programu a k tomu, jak se žáci chovali v situacích, které simuluje.
 
-== Hypotézy
+// Odsouhlasit s vedoucím – oproti schválenému designu výzkumu (05/2025) jde o změnu. Původní otázky:
+// VO1 Zlepšila se atmosféra ve třídě po absolvování digitální hry? VO2 Jaký dopad má digitální hra na žáky
+// s nízkým sociometrickým statusem? VO3 Nastaly změny mezi žáky, kteří mají největší pozitivní nebo negativní vliv?
+// Důvod změny (případně uvést v Metodice): indexy vlivu se nepoužívají, původní VO2 a VO3 se v datech překrývaly
+// a chyběla otázka k samotnému programu a k herním dvojicím.
 
-// Doporučení: hypotézy vynechat a pracovat s výzkumnými otázkami (malý vzorek, data atmosféry jen za třídu).
-// Pokud vedoucí hypotézy požaduje, smysluplná je jen pro indexy vlivu, např.:
-// H0: Medián rozdílu kladného (záporného) vlivu žáků mezi pre-testem a post-testem je roven nule.
-// Pak sekci nadepsat a formulovat podle dohody; jinak tuto podkapitolu odstranit
-// (a upravit název kapitoly i nav.adoc).
+*Hlavní výzkumná otázka:* Jak se změnilo klima třídy a vztahy mezi žáky po absolvování digitální hry Strážci světla?
+
+*Dílčí výzkumné otázky:*
+
+VO1:: Jak se změnilo žáky vnímané klima třídy (celkové skóre a jeho složky) mezi pre-testem a post-testem?
+VO2:: Jak se změnila struktura kladných a záporných vazeb ve třídě a postavení nejvíce odmítaných žáků?
+VO3:: Jak se změnily vazby mezi žáky, kteří spolu ve hře tvořili dvojici?
+VO4:: Jak se žáci chovali v herních situacích zaměřených na důvěru, sdílení, podporu a upřímnost a jak hru reflektovali?

@@ -7,11 +7,48 @@
 
 == Výzkumný design
 
-// Kvantitativní design jedné skupiny s pre-testem a post-testem (bez kontrolní skupiny), doplněný
-// o data z průběhu hry a kvalitativní data (anonymní sdělení žáků, reflexní chat).
-// Starší měření téže třídy (12/2023, 1/2025) jako kontext / výchozí trend.
-// Časová osa: pre-test 6. 1. 2026 → hra 17. 6. 2026 (jedno sezení) → post-test 22. 6. 2026.
-// Zdroje k designu: Chráska 2007, Gavora 2000 (dohledat); delucchi2014measuring (vzor pre/post bez kontroly).
+// KONCEPT TEXTU – připravila AI na žádost autorky (17. 10. 2026) z dokumentu "Design výzkumného záměru"
+// (podklady/literatura/Design výzkumného záměru_Šílová.pdf, 05/2025) a z pozdějších rozhodnutí autorky.
+// Zdroje k designu: Chráska 2007, Gavora 2000 (dohledat a citovat); delucchi2014measuring (vzor pre/post bez kontroly).
+
+Výzkum vychází z designu výzkumného záměru zpracovaného v květnu 2025. Jeho cílem bylo vyvinout a ověřit prototyp
+digitálního výukového programu, který simuluje reálné sociální situace a umožňuje žákům rozvíjet sociální dovednosti;
+program měl být zaměřen na podporu pozitivního klimatu ve třídě prostřednictvím interaktivních herních prvků.
+
+Výzkum má podobu kvantitativně orientovaného šetření jedné skupiny s pre-testem a post-testem, bez kontrolní skupiny.
+Herní design je teoreticky ukotven v psychosociálních konstruktech třídního klimatu, jako jsou respekt, spolupráce
+nebo pocit bezpečí. Intervencí je digitální hra Strážci světla (podkapitola 3.3). Efekt programu je sledován
+sociometrickým screeningem v podobě pre-testu a post-testu, který poskytuje informace o sociálních vztazích
+mezi žáky před intervencí a po ní. Atmosféra ve třídě je vyjádřena celkovým skóre třídy v procentech, které
+zohledňuje sedm parametrů: zábavu, respekt, kamarádství, spolupráci, bezpečí, důvěru a pohodu. Sociometrická
+šetření byla realizována placeným nástrojem Klima třídy (proskoly.cz), který umožňuje měřit a analyzovat sociální
+vztahy a klima ve třídě a poskytuje standardizované výstupy vhodné pro kvantitativní analýzu.
+
+Data ze sociometrie jsou doplněna o záznamy z průběhu hry a o kvalitativní data – zprávy z reflexního chatu
+a anonymní sdělení žáků. Jako kontext slouží dvě starší měření téže třídy nástrojem Klima třídy (prosinec 2023
+a leden 2025), která ukazují vývoj klimatu před intervencí.
+
+Výzkum proběhl v tomto časovém sledu:
+
+* pre-test: 6. 1. 2026,
+* intervence (digitální hra v jednom sezení): 17. 6. 2026,
+* post-test: 22. 6. 2026.
+
+Oproti původnímu designu byly během zpracování provedeny tyto změny:
+
+* výzkumné otázky byly přeformulovány (kapitola 2), protože se původní otázky k žákům s nízkým statusem a k žákům
+  s největším vlivem v datech překrývaly a chyběla otázka k samotnému programu a k herním dvojicím;
+* za nejvíce odmítané žáky jsou místo tří žáků s nejvyšším počtem negativních vazeb považováni všichni žáci
+  se čtyřmi a více přijatými zápornými volbami v pre-testu; indexy vlivu se nepoužívají (podkapitola 3.5);
+* místo párového _t_-testu jsou výsledky vykázány popisně, protože atmosféra je k dispozici pouze za třídu
+  jako celek a výzkumný soubor je malý.
+
+Design má omezení, která vyplývají již z jeho povahy: výzkum je realizován pouze v jednom třídním kolektivu,
+což omezuje možnost zobecnění výsledků, a chybí kontrolní skupina, která by umožnila přesnější určení efektu
+intervence. Práce se sociálními vztahy ve třídě navíc vyžaduje citlivý přístup a dodržení etických zásad,
+zejména ochranu identity a důvěrnosti informací o žácích (podkapitola 3.6).
+
+// Pozn.: odkazy "kapitola 2", "podkapitola 3.3/3.5/3.6" jsou psané ručně – při změně číslování zkontrolovat.
 
 == Výzkumný soubor
 
@@ -131,7 +168,10 @@ Nakonec se otevře chat, v němž si žáci už pod svými jmény mohou napsat, 
 === Technické řešení
 
 Hra je webová aplikace napsaná v jazycích HTML, CSS a JavaScript a běží v internetovém prohlížeči bez
-instalace. Stav hry se v reálném čase synchronizuje mezi zařízeními obou hráčů přes databázi Firebase
+instalace. Design hry (příběh, úrovně, herní mechaniky a jejich vazbu na cíle sociálního učení) navrhla autorka;
+programový kód hry byl na základě tohoto designu vygenerován pomocí nástrojů umělé inteligence a autorka hru
+průběžně testovala a upravovala (viz podkapitola <<ai-deklarace,3.7>>).
+Stav hry se v reálném čase synchronizuje mezi zařízeními obou hráčů přes databázi Firebase
 Realtime Database. Žáci se přihlašují školními účty Google. Párování do dvojic a přiřazení přezdívek
 zajišťuje serverová funkce (Firebase Cloud Functions) podle seznamu, který předem nahraje učitel. Propojení
 skutečného jména s přezdívkou je uloženo jen na serveru a do zařízení žáka se nedostane. Bezpečnostní pravidla
@@ -144,17 +184,47 @@ místnost a odemyká reflexi. Hra průběžně zaznamenává ukazatele jednotliv
 chatu. Učitel je může zobrazit v přehledu a exportovat do formátu CSV. Tento export byl ve výzkumu zdrojem
 dat o průběhu hry. Při lichém počtu žáků hra počítá s tím, že chybějícího parťáka doplní dospělý.
 // Rozhodnout: uvést odkaz na zdrojový kód / veřejnou adresu hry, nebo kód přiložit (příloha / CD).
+=== Testování hry
+
+Během vývoje byla hra průběžně testována autorkou se dvěma vlastními dětmi, které hrály za dva samostatné účty
+Google. V této fázi proběhlo velké množství testovacích her a poznatky z nich byly průběžně zapracovávány do kódu hry.
+
+Před intervencí ve výzkumné třídě byla hra pilotně ověřena 22. 5. 2026 se žáky jiné školy ve stejném okrese;
+zúčastnilo se ho pět dvojic, tj. 10 žáků, a hrálo se ještě v první verzi hry, která měla tři úrovně (úroveň Skleněný most byla doplněna
+až v červnu 2026). Pilotní ověření ukázalo zásadní podmínku pro průběh hry: je nutné zamezit tomu, aby spolu žáci během hraní komunikovali. Pokud
+si žáci sdělují, jakou mají ve hře roli nebo co vidí na obrazovce, dvojice se prozradí, žáci zjistí, s kým hrají,
+a hra ztrácí smysl, protože je postavena na spolupráci s anonymním parťákem. Data z pilotního ověření nejsou
+součástí výzkumu.
+
+Na základě tohoto zjištění bylo do hry ještě týž den doplněno opatření: hra nyní před vstupem do první úrovně
+zobrazí upozornění, že zvířecí role a avatar jsou tajemstvím hráče a že
+nikomu ve třídě nemá roli prozradit, ukazovat svou obrazovku ani napovídat. Následuje kontrolní otázka, zda se
+žák smí se spolužáky bavit o tom, jaké zvíře dostal. Do hry pokračuje až po správné odpovědi; při nesprávné
+odpovědi se mu pravidlo znovu vysvětlí.
+
+Poslední test hry ve finální podobě se čtyřmi úrovněmi proběhl 16. 6. 2026 večer, den před intervencí
+ve výzkumné třídě.
+
+// Zdroj: původní export hry (podklady/data/hra) – 5 místností jiné školy, reflexní chat 22. 5. 2026 10:29–10:45 SELČ;
+// upozornění ve hře přidáno commitem 60ae2b8 22. 5. 2026 23:18 (C:\dp\uhk); poslední testovací místnost 16. 6. 2026
+// ve 20:57 SELČ. Počet dvojic a vznik upozornění na základě pilotu potvrdila autorka (18. 10. 2026).
+// Školu pilotního ověření nejmenovat (riziko identifikace; i okres jen obecně, jak je výše).
 
 === Průběh intervence
 
 Hra proběhla 17. 6. 2026 ve výzkumné třídě v jednom vyučovacím sezení. Hrálo 13 dvojic: 12 dvojic tvořili
 žáci a v jedné dvojici hrála žákyně s asistentkou pedagoga, protože počet žáků byl lichý. Dvojice sestavila
 třídní učitelka cíleně, vždy ze žáka s výraznějším a slabším postavením ve třídě, na základě pre-testu
-v kombinaci s vlastním pedagogickým úsudkem. Učitelka hru spustila, během hraní sledovala průběh v
-administrátorském rozhraní a po dokončení herní části odemkla reflexi. Všech 13 dvojic prošlo všemi čtyřmi
+v kombinaci s vlastním pedagogickým úsudkem.
+
+Na začátku sezení dostali žáci pokyny, jak se během hry chovat, a byli upozorněni, že je během hry zakázáno
+mluvit; vycházelo se přitom ze zkušenosti z pilotního ověření, podle níž by vzájemná komunikace prozradila
+složení dvojic. Případné technické problémy a dotazy se řešily individuálně u konkrétního žáka.
+Učitelka hru spustila, během hraní sledovala průběh v administrátorském rozhraní a po dokončení herní části
+odemkla reflexi. Všech 13 dvojic prošlo všemi čtyřmi
 úrovněmi i reflexí s odhalením identity parťáka.
-// TODO doplnit: délka sezení / vyučovací hodina, použitá zařízení (tablety/notebooky), uvedení hry žákům,
-// případné technické obtíže, zda následovala i společná ústní reflexe ve třídě. Reflexní chat probíhal
+// TODO doplnit: délka sezení / vyučovací hodina, použitá zařízení (tablety/notebooky),
+// zda následovala i společná ústní reflexe ve třídě. Reflexní chat probíhal
 // podle časů zpráv přibližně od 11:15 do 11:45.
 
 == Metody sběru dat
@@ -174,27 +244,130 @@ administrátorském rozhraní a po dokončení herní části odemkla reflexi. V
 
 == Zpracování a analýza dat
 
-// Přepis výstupů reportů, pseudonymizace (kódy Z01–Z27, klíč uložen odděleně, mimo sdílená úložiště).
-// Atmosféra: popisně (data jen za třídu). Indexy vlivu: Wilcoxonův párový test (hlavní, zešikmené rozdělení),
-// párový t-test (doplňkově), velikost účinku, 95% IS; citlivostní analýza s přepočtem na počet respondentů.
-// Případové sledování vybraných žáků (VO2, VO3) popisně.
-// Obsahová analýza chatu a anonymních sdělení (kategorie, kódování autorkou, příp. druhý posuzovatel).
-// Software (Ruby skripty / JASP / Excel – podle toho, čím se výpočty ověří). Hladina významnosti α = 0,05.
-// Zdroje: Hendl 2004, Chráska 2007 (dohledat).
+// KONCEPT TEXTU podkapitol 3.5–3.7 – připravila AI na žádost autorky (17. 10. 2026) z podklady/poznamky-k-praci.md;
+// autorka text dále upraví.
+
+Data byla zpracována a vyhodnocena s využitím nástroje umělé inteligence Claude Opus 5.5 s nastavením úsilí Medium
+(podrobněji podkapitola <<ai-deklarace,3.7>>). Výstupy nástroje autorka kontrolovala
+v jednotlivých krocích popsaných níže.
+
+=== Příprava dat
+
+Výstupy nástroje Klima třídy jsou k dispozici jako reporty ve formátu PDF. Údaje z reportů všech čtyř měření byly
+přepsány do tabulek a pseudonymizovány: každý žák dostal náhodný kód Z01–Z27, jehož pořadí neodpovídá abecednímu
+pořadí ani třídnímu výkazu; asistentka pedagoga, která hrála v jedné z herních dvojic, je označena kódem X67.
+Klíč přiřazující kódy ke jménům je uložen odděleně od pracovních dat a není součástí práce. Stejným způsobem byl
+zpracován export dat ze hry. Ve zprávách z reflexního chatu a v anonymních sděleních žáků byla jména i přezdívky
+spolužáků nahrazeny kódy.
+
+Z výstupů nástroje Klima třídy práce využívá atmosféru třídy, kladné a záporné volby žáků a vzájemné hodnocení
+vlastností. Indexy vlivu a sociometrické pozice, které nástroj rovněž poskytuje, se v práci nepoužívají, protože
+nesouvisejí přímo s výzkumnými otázkami a postup jejich výpočtu není v dostupné dokumentaci nástroje popsán.
+
+=== Rekonstrukce voleb ze sociogramů
+
+Report nástroje Klima třídy obsahuje sociogramy kladných a záporných vazeb pouze jako obrázky; seznam voleb
+(kdo koho zvolil) report neuvádí. Volby z pre-testu a post-testu proto byly ze sociogramů zrekonstruovány.
+Sociogramy byly převedeny do obrázků ve vysokém rozlišení a zpracováním obrazu byly určeny polohy uzlů (žáků),
+barevné čáry a šipky. Význam barev je dán nástrojem: zelená čára označuje vzájemnou volbu, modrá jednosměrnou
+volbu chlapce, červená jednosměrnou volbu dívky a žlutý uzel žáka, který při šetření nebyl přítomen.
+Při rekonstrukci byla uplatněna omezení vyplývající z nástroje: každý žák mohl udělit nejvýše tři kladné a tři
+záporné volby a nepřítomný žák nemohl nikoho zvolit.
+
+Místa, která nebylo možné jednoznačně určit automaticky (překrývající se uzly, čáry vedoucí pod jinými uzly,
+slité šipky), byla posouzena na zvětšených výřezech a následně ověřena autorkou. Nakonec byla celá rekonstrukce
+nezávisle zkontrolována porovnáním s originálními sociogramy: zda každou barevnou čáru v obrázku vysvětluje
+některá z rekonstruovaných voleb a zda počet šipek u každého žáka odpovídá počtu přijatých voleb. Sporné vazby
+nalezené při této kontrole autorka posoudila a rekonstrukce byla podle jejího rozhodnutí upravena.
+U jednoho žáka v pre-testu nebylo možné kvůli slitým šipkám určit všechny přijaté kladné volby; jeho počet
+přijatých kladných voleb je proto dolním odhadem.
+
+=== Analýza dat
+
+Atmosféra třídy je k dispozici pouze za třídu jako celek (celkové skóre a sedm složek v procentech). Hodnoty složek
+v pre-testu a post-testu report uvádí jen v grafu, odkud byly odečteny s přesností ±1 procentní bod. Atmosféra je
+vyhodnocena popisně: srovnáním pre-testu a post-testu a srovnáním post-testu s průměrem a rozpětím měření před
+intervencí (M1–M3).
+
+Ze zrekonstruovaných voleb byly pro každé měření spočítány počty voleb, vzájemných a jednosměrných voleb, počet
+přijatých voleb u každého žáka, hustota sítě (podíl uskutečněných vazeb z teoreticky možných) a podíl voleb mezi
+žáky stejného pohlaví; změna počtu přijatých voleb na žáka je popsána průměrem a mediánem.
+U herních dvojic byla sledována vazba přímo mezi jejich členy v pre-testu a post-testu.
+Vzhledem k malému rozsahu souboru a jednoskupinovému designu jsou všechny výsledky vykázány popisně,
+bez statistického testování.
+
+Nejvíce odmítaní žáci (žáci se čtyřmi a více přijatými zápornými volbami v pre-testu) a žáci s nejvyšším počtem
+přijatých kladných voleb jsou popsáni jednotlivě. Vzájemné hodnocení vlastností je
+vyhodnoceno popisně jako součet označení podle vlastností; report uvádí pouze žáky, které danou vlastností označili
+alespoň dva spolužáci.
+
+Data ze hry jsou vyhodnocena popisnou statistikou (četnosti, medián, rozpětí) za jednotlivé úrovně a dvojice.
+Zprávy z reflexního chatu a anonymní sdělení žáků byly zpracovány kvantitativní obsahovou analýzou.
+
+// TODO autorka: popsat kategorie a postup kódování chatu a anonymních sdělení (kdo kódoval, příp. druhý posuzovatel).
+// TODO: výpočty provedeny skripty v jazyce Ruby (vytvořenými s AI) – doplnit, zda a čím byly ověřeny (např. Excel).
+// Zdroje k metodám: Hendl 2004, Chráska 2007 (dohledat a citovat).
 
 == Etické aspekty výzkumu
 
-// Informovaný souhlas zákonných zástupců (příloha: vzor souhlasu); dobrovolnost; anonymizace a ochrana dat
-// (GDPR, zpracovatel proskoly.cz); hra bez žebříčků, důraz na bezpečí v reflexi; ukončení pozitivní zkušeností
-// (hejlova2015metodologicke); dvojí role autorky (učitelka, autorka hry, výzkumnice) a jak s ní bylo zacházeno;
-// postup při zjištění šikany. Etický kodex ČAPV; případné schválení etickou komisí (ověřit, zda proběhlo).
+Výzkum probíhal ve třídě, v níž autorka působí jako třídní učitelka. Zákonní zástupci všech žáků byli předem
+písemně informováni o cíli a průběhu studie a o způsobu nakládání s daty a všichni podepsali informovaný souhlas
+s účastí dítěte ve výzkumu a se zveřejněním výsledků v diplomové práci. Znění informovaného souhlasu uvádí
+Příloha D.
 
+Osobní údaje žáků byly chráněny v souladu s obecným nařízením o ochraně osobních údajů (GDPR). V práci jsou žáci
+uvedeni pouze pod kódy a klíč ke kódům má k dispozici pouze autorka. V textu nejsou uváděny údaje, podle kterých
+by bylo možné konkrétního žáka ve třídě poznat, ani název školy a obce. Sociometrická šetření proběhla v nástroji
+Klima třídy, jehož provozovatel zpracovává data v rámci své služby pro školy.
+
+Hra byla navržena tak, aby žáky nevystavovala nepříjemným situacím: neobsahuje žebříčky ani srovnávání výkonů,
+žáci hrají anonymně a identitu parťáka zjistí až v závěrečné reflexi. Možnosti negativního jednání (výsměch, lživý
+úlomek kódu) jsou součástí simulovaných situací a hra na ně reaguje tak, aby dvojice mohla úroveň dokončit.
+Průběh hry učitelka sledovala v administrátorském rozhraní a mohla kdykoli zasáhnout.
+
+Autorka měla ve výzkumu více rolí: je třídní učitelkou výzkumné třídy, autorkou hry i výzkumnicí. Tato skutečnost
+může ovlivnit jak chování žáků, tak výklad výsledků; je proto zohledněna v diskuzi mezi limity výzkumu.
+
+// TODO autorka: dobrovolnost (mohl žák odmítnout? co dělal žák, který nehrál?); postup při případném zjištění
+// šikany v anonymních sděleních; zda byl výzkum posouzen etickou komisí (ověřit); etický kodex ČAPV (citovat);
+// ukončení pozitivní zkušeností (hejlova2015metodologicke – klíč v literatura.bib zatím chybí).
+
+[[ai-deklarace]]
 == Využití nástrojů umělé inteligence
 
-// Povinná deklarace podle pokynu prorektorky UHK 01/2024 (čl. II.2): jaké nástroje, k čemu, jak byly
-// výstupy kriticky ověřeny. Průběžný přehled: podklady/poznamky-k-praci.md (sekce "Přehled využití AI").
-// Dosavadní využití (doplnit/upravit): sestavení dokumentu a PDF; rešerše a shrnutí podkladové literatury;
-// přepis sociometrických reportů z PDF a pseudonymizace dat; anonymizace exportu ze hry; statistické
-// výpočty; generování tabulek; návrh struktury kapitol a podklady k psaní; jazyková a věcná kontrola textu.
-// Výslovně uvést, že text práce psala autorka a jak ověřovala výstupy (např. přepočet statistik v JASP).
-// Pozn.: v pracovních poznámkách z metodologie jsou i výstupy Perplexity – pokud ovlivnily návrh, uvést.
+V souladu s pokynem prorektorky Univerzity Hradec Králové č. 01/2024 uvádí autorka přehled využití nástrojů umělé
+inteligence.
+
+*Vývoj hry.* Programový kód digitální hry Strážci světla byl vygenerován pomocí nástrojů umělé inteligence
+na základě vlastního designu hry, který vytvořila autorka (příběh, úrovně, herní mechaniky a jejich vazba
+na cíle sociálního učení). Vývoj proběhl ve dvou fázích. V první fázi (15.–22. 5. 2026) vznikla v prostředí
+Visual Studio Code s rozšířením GitHub Copilot základní architektura hry, první dvě úrovně, původní podoba úrovně
+Kód pravdy a administrátorské rozhraní; použity byly modely Raptor mini (Preview), GPT-5 mini (OpenAI)
+a Claude Haiku 4.5 (Anthropic). Ve druhé fázi (5.–16. 6. 2026) byla v prostředí Google Antigravity doplněna
+úroveň Skleněný most, Kód pravdy přesunut do čtvrté úrovně, upraveny záznamy dat pro učitele a zabezpečení
+rolí; použity byly modely Gemini 3.5 Flash (Google) a Claude Sonnet 4.6 (Anthropic). Autorka hru průběžně
+testovala a výsledné chování hry ověřila před jejím použitím ve výzkumu.
+// Zdroj: C:\dp\uhk\docs\AI_DEVELOPMENT_HISTORY.md (rekonstrukce z historie repozitáře a záznamů vývojových prostředí).
+
+*Zpracování dat a příprava textu.* Při zpracování práce byl využit nástroj Claude Opus 5.5 (Anthropic) v prostředí
+Claude Code s nastavením úsilí Medium, a to v říjnu 2026. Nástroj byl využit k těmto činnostem:
+
+* zpracování a vyhodnocení dat: přepis výstupů sociometrických reportů do tabulek, pseudonymizace dat
+  ze sociometrie a ze hry, rekonstrukce voleb ze sociogramů zpracováním obrazu, výpočty popisných ukazatelů
+  a sestavení tabulek;
+* návrh struktury kapitol a podkladů k psaní (osnovy, přehledy čísel);
+* příprava konceptu textu podkapitol 3.3 (popis hry, z technické dokumentace a zdrojového kódu hry),
+  3.5–3.7, kapitoly Cíl práce a kapitoly Výsledky; koncepty autorka ověřila a upravila;
+* rešerše a přehled podkladové literatury;
+* technická příprava dokumentu (sestavení PDF podle šablony).
+
+Výstupy nástroje autorka kriticky ověřovala: rekonstrukci voleb porovnala s originálními sociogramy a sporné vazby
+posoudila sama, čísla v textu a tabulkách odpovídají výstupům z dat a koncepty textu upravila. Za obsah práce
+odpovídá autorka.
+
+// TODO autorka: doplnit, čím byly ověřeny výpočty (např. Excel); upravit seznam podle skutečnosti
+// (např. jazyková kontrola, překlad anotace); v pracovních poznámkách z metodologie jsou i výstupy Perplexity –
+// pokud ovlivnily návrh, uvést. Pokyn UHK (čl. II.2) vyžaduje uvést i to, že AI připravila koncepty textu –
+// tuto položku nevypouštět; pokud autorka kapitolu přepíše celou sama, lze ji přeformulovat.
+// Ochrana dat: originální reporty se jmény žáků byly při přepisu a pseudonymizaci zpracovány nástrojem AI
+// (cloudová služba). Zvážit s vedoucím, zda a jak to uvést (souvisí s informovaným souhlasem a GDPR).
